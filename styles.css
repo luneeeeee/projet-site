@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,31 +9,37 @@ body {
     color: #333;
 }
 
-/* Navigation */
-.nav-header {
+/* Bande supérieure */
+.top-bar {
     width: 1459px;
     height: 49px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    background:url('./images/fleurs.jpg') lightgray 50% / cover no-repeat;
+    margin: auto;
+}
+
+/* Navigation */
+.nav-header {
+    width: 1575px;
+    height: 140px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .nav-text {
-    width: 1575px;
-    height: 140px;
     color: #FFF;
-    font-family: 'Koulen', sans-serif;
     font-size: 40px;
     font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Section de bande noire */
+/* Bande noire sous le menu */
 .black-bar {
     width: 1462px;
     height: 97px;
     background: #000;
+    margin: auto;
 }
 
 /* Bande grise */
@@ -42,80 +47,101 @@ body {
     width: 1462px;
     height: 20px;
     background: #D9D9D9;
+    margin: auto;
 }
 
 /* Bannière principale */
 .banner {
     width: 1462px;
     height: 409px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    position: relative;
+    margin: auto;
 }
 
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 128px;
+    font-weight: 400;
+}
+
+/* Sous-titre */
+.subtitle {
+    width: 1015px;
+    height: 324px;
+    text-align: center;
+    margin: auto;
+}
+
+.subtitle-text {
+    color: #E4EA97;
+    font-size: 128px;
+    font-weight: 400;
+}
+
+/* Grande section beige clair */
 .large-section {
     width: 1462px;
     height: 969px;
     background: #C9AAAA;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Contenu de la bannière */
-.banner-content {
-    width: 479px;
-    height: 432px;
-    color: #000;
-    font-size: 128px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-/* Section "DÉDAL DES COULEURS" */
-.subtitle {
-    width: 1015px;
-    height: 324px;
-    color: #000;
-    font-size: 128px;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.subtitle-highlight {
-    color: #E4EA97;
-}
-
-/* Section des collections */
 .collection-title {
-    width: 484px;
-    height: 338px;
     color: #000;
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
+    margin-bottom: 20px;
 }
 
-.collection-item-large {
-    width: 464px;
-    height: 740px;
+.collection-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.collection-image {
+    width: 264px;
+    height: 219px;
+    object-fit: cover;
+}
+
+.collection-text {
     color: #000;
     font-size: 24px;
     font-weight: 400;
-    line-height: normal;
 }
 
-/* Images des collections */
+/* Petites images de collection */
 .collection-image-small {
     width: 264px;
     height: 219px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 /* Pied de page */
 .footer-bar {
     width: 1459px;
     height: 40px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    background: url('./images/coquelicot.jpg') lightgray 50% / cover no-repeat;
+    margin: auto;
 }
 
 .footer-gray-bar {
     width: 1459px;
     height: 18px;
     background: #D9D9D9;
+    margin: auto;
 }
