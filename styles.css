@@ -38,39 +38,32 @@ header nav ul li a:hover {
     color: #ffd700; /* Couleur dorée au survol */
 }
 
-/* Section Bannière principale */
-.banner {
+/* Section Bannière principale (Page 1 et Page 2) */
+.banner, .collection-banner {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.banner img {
+.banner img, .collection-banner img {
     width: 100%;
     height: auto;
 }
 
-.banner .gallery-title {
+.banner .gallery-title, .collection-banner .banner-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #F5F5F5;
+    text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.banner h1 {
-    font-size: 3em;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.banner h2 {
-    font-size: 2em;
-    color: #a1b56c; /* Couleur verte douce */
-}
-
-/* Section Collections */
+/* Section Collections (Page 1) */
 .collections {
     display: flex;
     justify-content: space-around;
@@ -112,51 +105,24 @@ header nav ul li a:hover {
     opacity: 0.9;
 }
 
-/* Section Bannière "Coup d’œil sur la collection" */
-.collection-banner {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: #C9AAAA;
-    text-align: center;
-}
-
-.collection-banner img {
-    width: 100%;
-    height: auto;
-}
-
-.collection-banner .banner-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Koulen', sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    color: #F5F5F5;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Section des œuvres */
+/* Section Œuvres (Page 2) */
 .collection-overview {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 40px;
     padding: 40px 20px;
-    background-color: #C9AAAA;
+    background-color: #D9BFBF;
 }
 
 .art-piece {
     text-align: center;
-    width: 164px;
+    width: 200px;
     height: auto;
 }
 
 .art-piece img {
-    width: 164px;
-    height: 197px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
     background: lightgray 50% / cover no-repeat;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -165,13 +131,13 @@ header nav ul li a:hover {
 .art-piece p {
     margin-top: 10px;
     font-family: 'Kotta One', serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.4;
     color: #000;
 }
 
-/* Section Galerie */
+/* Section Galerie (Page 2) */
 .gallery-preview {
     background-color: #D9D9D9;
     text-align: center;
@@ -181,7 +147,7 @@ header nav ul li a:hover {
 .gallery-preview .gallery-image {
     width: 100%;
     height: auto;
-    background: lightgray 50% / cover no-repeat;
+    margin-bottom: 20px;
 }
 
 .gallery-preview .gallery-title {
@@ -189,8 +155,8 @@ header nav ul li a:hover {
     font-size: 32px;
     font-weight: 400;
     color: #000;
-    margin: 10px 0;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .gallery-preview .arrow {
@@ -199,23 +165,19 @@ header nav ul li a:hover {
     margin-top: 5px;
 }
 
-/* Pied de page */
+/* Pied de page (Commun pour les deux pages) */
 footer {
-    background-color: #D9BFBF;
-    text-align: center;
+    background-color: #D9D9D9;
+    width: 100%;
     padding: 10px 0;
+    text-align: center;
 }
 
 .footer-links a {
     margin: 0 10px;
     font-family: 'Koulen', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     color: #000;
     text-decoration: none;
     transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
