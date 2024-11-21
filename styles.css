@@ -1,147 +1,139 @@
+/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Koulen', sans-serif;
+    font-family: Arial, sans-serif;
+ }
+ 
+ body {
+    background-color: #f4f4f4;
     color: #333;
-}
-
-/* Bande supérieure */
-.top-bar {
-    width: 1459px;
-    height: 49px;
-    background:url('./images/fleurs.jpg') lightgray 50% / cover no-repeat;
-    margin: auto;
-}
-
-/* Navigation */
-.nav-header {
-    width: 1575px;
-    height: 140px;
-    background: #000;
+    line-height: 1.6;
+ }
+ 
+ /* Header styles */
+ header {
+    background-color: #000;
+    padding: 15px 0;
+ }
+ 
+ header nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: auto;
-}
-
-.nav-text {
-    color: #FFF;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-/* Bande noire sous le menu */
-.black-bar {
-    width: 1462px;
-    height: 97px;
-    background: #000;
-    margin: auto;
-}
-
-/* Bande grise */
-.gray-bar {
-    width: 1462px;
-    height: 20px;
-    background: #D9D9D9;
-    margin: auto;
-}
-
-/* Bannière principale */
-.banner {
-    width: 1462px;
-    height: 409px;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+ }
+ 
+ header nav ul li a:hover {
+    color: #ffd700; /* Couleur dorée au survol */
+ }
+ 
+ /* Banner styles */
+ .banner {
     position: relative;
-    margin: auto;
-}
-
-.banner-image {
+    text-align: center;
+    color: white;
+ }
+ 
+ .banner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.banner-content {
+    height: auto;
+    opacity: 0.8;
+    display: block;
+ }
+ 
+ .gallery-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000;
-    font-size: 128px;
-    font-weight: 400;
-}
-
-/* Sous-titre */
-.subtitle {
-    width: 1015px;
-    height: 324px;
     text-align: center;
-    margin: auto;
-}
-
-.subtitle-text {
-    color: #E4EA97;
-    font-size: 128px;
-    font-weight: 400;
-}
-
-/* Grande section beige clair */
-.large-section {
-    width: 1462px;
-    height: 969px;
-    background: #C9AAAA;
-    margin: auto;
-    padding: 20px;
-}
-
-.collection-title {
-    color: #000;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-.collection-item {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+ }
+ 
+ .gallery-title h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #fff; /* Blanc pour bien contraster avec l'ombre */
+    text-transform: uppercase;
+ }
+ 
+ .gallery-title h2 {
+    font-size: 2em;
+    color: #a1b56c; /* Couleur verte douce */
+ }
+ 
+ /* Collections section */
+ .collections {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     gap: 20px;
-    margin-bottom: 20px;
-}
-
-.collection-image {
-    width: 264px;
-    height: 219px;
-    object-fit: cover;
-}
-
-.collection-text {
+    padding: 40px 20px;
+    background-color: #d9bfbf; /* Fond rosé */
+ }
+ 
+ .collection-item {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+ }
+ 
+ .collection-item:hover {
+    transform: scale(1.05); /* Zoom au survol */
+ }
+ 
+ .collection-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
     color: #000;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-/* Petites images de collection */
-.collection-image-small {
-    width: 264px;
-    height: 219px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-/* Pied de page */
-.footer-bar {
-    width: 1459px;
-    height: 40px;
-    background: url('./images/coquelicot.jpg') lightgray 50% / cover no-repeat;
-    margin: auto;
-}
-
-.footer-gray-bar {
-    width: 1459px;
-    height: 18px;
-    background: #D9D9D9;
-    margin: auto;
-}
+    text-transform: uppercase;
+ }
+ 
+ .collection-item a img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+ }
+ 
+ .collection-item a img:hover {
+    opacity: 0.9;
+ }
+ 
+ /* Footer styles */
+ footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+ }
+ 
+ .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+ }
+ 
+ .footer-links a:hover {
+    color: #ffd700; /* Couleur dorée au survol */
+ 
