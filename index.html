@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie DÉDAL DES COULEURS</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Galerie DéDAL DES COULEURS</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Menu de navigation -->
-    <header class="navigation">
-        <img src="images/fleur.jpg alt="Background Image" class="nav-image">
-        <div class="nav-background"></div>
-        <div class="nav-text">HOME COLLECTIONS ARTISTE BOUTIQUE BILLETERIE</div>
-    </header>
+   <!-- En-tête du site -->
+   <header>
+       <nav>
+           <ul class="menu">
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">COLLECTIONS</a></li>
+               <li><a href="#">ARTISTE</a></li>
+               <li><a href="#">BOUTIQUE</a></li>
+               <li><a href="#">BILLETTERIE</a></li>
+           </ul>
+       </nav>
+   </header>
 
-    <!-- Bannière principale -->
-    <section class="banner">
-        <div class="banner-background"></div>
-        <img src="images/femmeparapluie.jpg" alt="Banner Image" class="banner-image">
-        <div class="banner-title">GALERIE</div>
-        <div class="banner-subtitle">
-            <span> </span><span class="dedal-text">dÉDAL DES COULEURS</span>
-        </div>
-    </section>
+   <!-- Bannière principale -->
+   <section class="banner">
+       <img src="images/femmeparapluie.jpg" alt="Femme avec un parasol">
+       <div class="gallery-title">
+           <h1>GALERIE</h1>
+           <h2>DÉDAL DES COULEURS</h2>
+       </div>
+   </section>
 
-    <!-- Collections -->
-    <section class="collections">
-        <div class="collection-background"></div>
+   <!-- Section des collections -->
+   <section class="collections">
+       <div class="collection-item">
+           <h3>COLLECTION BALLERINES</h3>
+           <a href="#">
+               <img src="images/ballerines.jpg" alt="Ballerines">
+           </a>
+       </div>
+       <div class="collection-item">
+           <h3>COLLECTION SAKURA</h3>
+           <a href="#">
+               <img src="images/cerises.jpg" alt="Sakura">
+           </a>
+       </div>
+       <div class="collection-item">
+           <h3>COLLECTION GADSBY</h3>
+           <a href="#">
+               <img src="images/bal.jpg" alt="Gadsby">
+           </a>
+       </div>
+   </section>
 
-        <div class="collection-item">
-            <div class="collection-title">COLLECTION BALLERINES</div>
-            <img src="images/ballerines.jpg" alt="Ballerines Image" class="collection-image">
-        </div>
-
-        <div class="collection-item">
-            <div class="collection-title-large">COLLECTION SAKURA</div>
-            <img src="images/cerise.jpg alt="Sakura Image" class="collection-image">
-        </div>
-
-        <div class="collection-item">
-            <div class="collection-title-large"><br/>COLLECTION GABSY</div>
-            <img src="images/bal.jpg" alt="Gadsy Image" class="collection-image">
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <img src="images/coquelicot.jpg" alt="Footer Image" class="footer-image">
-    </footer>
+   <!-- Pied de page -->
+   <footer>
+       <div class="footer-links">
+           <ul>
+               <li><a href="#">CRÉDITS</a></li>
+               <li><a href="#">ACCESSIBILITÉ</a></li>
+               <li><a href="#">COOKIE</a></li>
+               <li><a href="#">MENTIONS LÉGALES</a></li>
+               <li><a href="#">DONNÉES PERSONNELLES</a></li>
+           </ul>
+       </div>
+   </footer>
 </body>
 </html>
