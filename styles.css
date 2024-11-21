@@ -117,25 +117,6 @@
  .collection-item a img:hover {
     opacity: 0.9;
  }
- 
- /* Footer styles */
- footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
- }
- 
- .footer-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: color 0.3s;
- }
- 
- .footer-links a:hover {
-    color: #ffd700; /* Couleur dorée au survol */
  /* Général */
 body {
     margin: 0;
@@ -149,7 +130,7 @@ body {
 .collection-banner {
     width: 375px;
     height: 309px;
-    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
+    background: url('images/pont.jpg') lightgray 50% / cover no-repeat;
     position: relative;
     margin: 0 auto;
     text-align: center;
@@ -214,7 +195,7 @@ body {
     width: 375px;
     height: 191px;
     margin: 0 auto;
-    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
+    background: url('images/gallerie.webp') lightgray 50% / cover no-repeat;
     flex-shrink: 0;
 }
 
