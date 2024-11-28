@@ -1,19 +1,21 @@
 
-/* Reset général */
+/* --- Reset Général --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* --- Corps de la page --- */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Koulen', sans-serif;
+    font-weight: 400;
     line-height: 1.6;
+    background-color: #F5F5F5;
+    color: #000;
 }
 
-/* Header */
+/* --- Header --- */
 header {
     background-color: #000;
     padding: 15px 0;
@@ -39,7 +41,7 @@ header nav ul li a:hover {
     color: #ffd700; /* Couleur dorée au survol */
 }
 
-/* Section Bannière principale (Page 1 et Page 2) */
+/* --- Bannière principale (Page 1 et Page 2) --- */
 .banner, .collection-banner {
     position: relative;
     text-align: center;
@@ -64,7 +66,44 @@ header nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Section Collections (Page 1) */
+/* --- Bannière pour Claude Monet --- */
+.banner {
+    width: 375px;
+    height: 39px;
+    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
+}
+
+.banner-full {
+    width: 375px;
+    height: 818px;
+    background: #C9AAAA;
+}
+
+.banner-image {
+    width: 375px;
+    height: 228px;
+    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
+}
+
+.banner-title {
+    width: 297px;
+    height: 72px;
+    color: #E4EA97;
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.banner-subtitle {
+    width: 155px;
+    height: 18px;
+    color: #FFF;
+    font-size: 48px;
+    line-height: normal;
+}
+
+/* --- Section Collections --- */
 .collections {
     display: flex;
     justify-content: space-around;
@@ -106,7 +145,47 @@ header nav ul li a:hover {
     opacity: 0.9;
 }
 
-/* Section Œuvres (Page 2) */
+/* --- Section À Propos --- */
+.about-section {
+    width: 375px;
+    height: auto;
+    padding: 20px;
+}
+
+.about-title {
+    width: 186px;
+    height: 59px;
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    width: 343px;
+    height: auto;
+    color: #000;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --- Séparateurs --- */
+.separator {
+    width: 373px;
+    height: 35px;
+    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
+}
+
+.divider {
+    width: 375px;
+    height: 4px;
+    background: #F5F5F5;
+}
+
+/* --- Section Œuvres (Page 2) --- */
 .collection-overview {
     display: flex;
     justify-content: space-around;
@@ -140,51 +219,66 @@ header nav ul li a:hover {
     font-style: italic; /* Style italique */
     line-height: 1.5;
     color: #333; /* Texte gris foncé */
-
 }
 
-/* Section Galerie (Page 2) */
-.gallery-preview {
-    background-color: #D9D9D9;
-    text-align: center;
-    padding: 20px 0;
+/* --- Section Horaires --- */
+.hours-container {
+    width: 187px;
+    height: 128px;
+    background: #DCD0DD;
+    padding: 10px;
 }
 
-.gallery-preview .gallery-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.gallery-preview .gallery-title {
-    font-family: 'Koulen', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
+.hours-text {
     color: #000;
-    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* --- Section Suivez-Nous --- */
+.follow-container {
+    width: 348px;
+    height: 81px;
+    padding: 10px;
+}
+
+.follow-text {
+    color: #000;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
-.gallery-preview .arrow {
-    font-size: 24px;
-    color: #000;
-    margin-top: 5px;
+.social-icons {
+    width: 188px;
+    height: 128px;
+    background: #95ACBD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/* Pied de page (Commun pour les deux pages) */
-footer {
-    background-color: #D9D9D9;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+.social-icon {
+    width: 119px;
+    height: 80px;
+    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
 }
 
-.footer-links a {
-    margin: 0 10px;
-    font-family: 'Koulen', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.3s;
+/* --- Pied de page --- */
+.footer {
+    width: 375px;
+    height: 20px;
+    background: #D9D9D9;
+}
+
+/* --- SVG Icônes --- */
+.svg-icon {
+    width: 24px;
+    height: 22px;
+}
+
+.svg-icon path {
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
