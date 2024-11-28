@@ -1,3 +1,4 @@
+
 /* Reset général */
 * {
     margin: 0;
@@ -111,30 +112,31 @@ header nav ul li a:hover {
     justify-content: space-around;
     gap: 40px;
     padding: 40px 20px;
-    background-color: #D9BFBF;
+    background-color: #e8d9d2; /* Fond légèrement beige */
 }
 
 .art-piece {
     text-align: center;
-    width: 200px;
-    height: auto;
+    width: 250px; /* Taille ajustée */
+    background-color: #fff; /* Fond blanc */
+    padding: 15px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre subtile */
 }
 
 .art-piece img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    background: lightgray 50% / cover no-repeat;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Légère arrondie des images */
 }
 
 .art-piece p {
     margin-top: 10px;
-    font-family: 'Kotta One', serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: #000;
+    font-family: 'Georgia', serif; /* Police élégante */
+    font-size: 14px; /* Taille lisible */
+    font-style: italic; /* Style italique */
+    line-height: 1.5;
+    color: #333; /* Texte gris foncé */
 }
 
 /* Section Galerie (Page 2) */
@@ -181,3 +183,4 @@ footer {
     color: #000;
     text-decoration: none;
     transition: color 0.3s;
+}
