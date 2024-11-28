@@ -111,7 +111,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     gap: 40px;
-    padding: 40px 20px;
+    padding: 100px 50px;
     background-color: #e8d9d2; /* Fond légèrement beige */
 }
 
