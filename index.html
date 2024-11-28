@@ -1,96 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Galerie Dédal des Couleurs</title>
-   <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Dédal des Couleurs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <!-- En-tête -->
-   <header>
-       <nav>
-           <ul class="menu">
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">COLLECTIONS</a></li>
-               <li><a href="#">ARTISTE</a></li>
-               <li><a href="#">BOUTIQUE</a></li>
-               <li><a href="#">BILLETTERIE</a></li>
-           </ul>
-       </nav>
-   </header>
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COLLECTIONS</a></li>
+                <li><a href="#">ARTISTE</a></li>
+                <li><a href="#">BOUTIQUE</a></li>
+                <li><a href="#">BILLETTERIE</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <!-- Page 1 : Bannière principale -->
-   <section class="banner">
-       <img src="images/femmeparapluie.jpg" alt="Femme avec un parasol">
-       <div class="gallery-title">
-           <h1>GALERIE</h1>
-           <h2>DÉDAL DES COULEURS</h2>
-       </div>
-   </section>
+    <!-- Bannière principale -->
+    <section class="banner">
+        <img src="images/femmeparapluie.jpg" alt="Femme avec un parasol">
+        <div class="gallery-title">
+            <h1>GALERIE</h1>
+            <h2>DÉDAL DES COULEURS</h2>
+        </div>
+    </section>
 
-   <!-- Page 1 : Section des collections -->
-   <section class="collections">
-       <div class="collection-item">
-           <h3>COLLECTION BALLERINES</h3>
-           <a href="#">
-               <img src="images/ballerines.jpg" alt="Ballerines">
-           </a>
-       </div>
-       <div class="collection-item">
-           <h3>COLLECTION SAKURA</h3>
-           <a href="#">
-               <img src="images/cerise.jpg" alt="Sakura">
-           </a>
-       </div>
-       <div class="collection-item">
-           <h3>COLLECTION GADSBY</h3>
-           <a href="#">
-               <img src="images/bal.jpg" alt="Gadsby">
-           </a>
-       </div>
-   </section>
+    <!-- Section Collections -->
+    <section class="collections">
+        <div class="collection-item">
+            <h3>COLLECTION BALLERINES</h3>
+            <a href="#">
+                <img src="images/ballerines.jpg" alt="Ballerines">
+            </a>
+        </div>
+        <div class="collection-item">
+            <h3>COLLECTION SAKURA</h3>
+            <a href="#">
+                <img src="images/cerise.jpg" alt="Sakura">
+            </a>
+        </div>
+        <div class="collection-item">
+            <h3>COLLECTION GADSBY</h3>
+            <a href="#">
+                <img src="images/bal.jpg" alt="Gadsby">
+            </a>
+        </div>
+    </section>
 
-   <!-- Page 2 : Bannière "Coup d’œil sur la collection" -->
-   <section class="collection-banner">
-       <img src="images/pont.jpg" alt="Pont dans un jardin par Claude Monet">
-       <div class="banner-title">
-           <h1>COUP D’ŒIL SUR LA COLLECTION</h1>
-       </div>
-   </section>
+    <!-- Section Coup d’œil sur la collection -->
+    <section class="collection-banner">
+        <img src="images/pont.jpg" alt="Pont dans un jardin par Claude Monet">
+        <div class="banner-title">
+            <h1>COUP D’ŒIL SUR LA COLLECTION</h1>
+        </div>
+    </section>
 
-   <!-- Page 2 : Section des œuvres -->
-   <section class="collection-overview">
-       <div class="art-piece">
-           <img src="images/barque.jpg" alt="Les dames du bateau">
-           <p>Les dames du bateau, <br>Claude Monet 1887</p>
-       </div>
-       <div class="art-piece">
-           <img src="images/falaise.jpg" alt="La promenade sur la falaise à Pourville">
-           <p>La promenade sur la falaise à Pourville, <br>Claude Monet 1882</p>
-       </div>
-   </section>
+    <!-- Section Œuvres -->
+    <section class="collection-overview">
+        <div class="art-piece">
+            <img src="images/barque.jpg" alt="Les dames du bateau">
+            <p>Les dames du bateau, <br>Claude Monet 1887</p>
+        </div>
+        <div class="art-piece">
+            <img src="images/falaise.jpg" alt="La promenade sur la falaise à Pourville">
+            <p>La promenade sur la falaise à Pourville, <br>Claude Monet 1882</p>
+        </div>
+    </section>
 
-   <!-- Page 2 : Section Galerie -->
-   <section class="gallery-preview">
-       <div class="gallery-image">
-           <img src="images/gallerie.webp" alt="Intérieur de galerie">
-       </div>
-       <div class="gallery-title">
-           <h2>GALERIE</h2>
-           <div class="arrow">↓</div>
-       </div>
-   </section>
+    <!-- Section Claude Monet -->
+    <section class="monet-section">
+        <!-- Bannière Claude Monet -->
+        <header class="main-banner">
+            <div class="banner-background">
+                <img src="images/monet-banner.jpg" alt="Claude Monet Background">
+            </div>
+            <div class="banner-text">
+                <h1 class="banner-title">PEINTRE</h1>
+                <h2 class="banner-subtitle">CLAUDE MONET</h2>
+                <p class="banner-dates">1840-1926</p>
+            </div>
+        </header>
 
-   <!-- Pied de page -->
-   <footer>
-       <div class="footer-links">
-           <a href="#">CRÉDITS</a>
-           <a href="#">ACCESSIBILITÉ</a>
-           <a href="#">COOKIE</a>
-           <a href="#">MENTIONS LÉGALES</a>
-           <a href="#">DONNÉES PERSONNELLES</a>
-       </div>
-   </footer>
+        <!-- Section À Propos -->
+        <section class="about-section">
+            <h2 class="section-title">À PROPOS</h2>
+            <p class="section-description">
+                Claude Monet (1840-1926) est un peintre français, fondateur et l’un des plus célèbres représentants du mouvement impressionniste.
+                Né à Paris, il a grandi au Havre, où il a commencé à peindre des paysages marins. Monet est surtout connu pour sa série d'œuvres
+                explorant les effets de la lumière et de l'atmosphère, notamment les célèbres <strong>Nymphéas</strong>, inspirés de son jardin à Giverny.
+                Sa peinture <em>« Impression, soleil levant »</em> (1872) a donné son nom au mouvement impressionniste. Monet a passé sa carrière à
+                peindre en plein air, capturant des scènes de la nature sous diverses lumières, notamment des séries de cathédrales, de peupliers et de ponts.
+            </p>
+        </section>
+
+        <!-- Section Horaires -->
+        <section class="opening-hours">
+            <div class="hours-content">
+                <p>OUVERT DU MARDI AU DIMANCHE DE 10H À 18H</p>
+                <p>DERNIÈRE ENTRÉE : 17H</p>
+                <p>NOCTURNE LE JEUDI JUSQU’À 21H</p>
+                <p>DERNIÈRE ENTRÉE : 20H</p>
+            </div>
+        </section>
+
+        <!-- Section Suivez-nous -->
+        <section class="follow-us">
+            <h2 class="follow-title">SUIVEZ-NOUS SUR LES RÉSEAUX</h2>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+            <div class="contact-form">
+                <p>Email :</p>
+                <p>Nom :</p>
+                <p>Prénom :</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="gallery-preview">
+        <div class="gallery-image">
+            <img src="images/gallerie.webp" alt="Intérieur de galerie">
+        </div>
+        <div class="gallery-title">
+            <h2>GALERIE</h2>
+            <div class="arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">CRÉDITS</a>
+            <a href="#">ACCESSIBILITÉ</a>
+            <a href="#">COOKIE</a>
+            <a href="#">MENTIONS LÉGALES</a>
+            <a href="#">DONNÉES PERSONNELLES</a>
+        </div>
+    </footer>
 </body>
 </html>
