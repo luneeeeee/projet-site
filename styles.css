@@ -69,7 +69,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    padding: 100px 50px;
+    padding: 40px 20px;
     background-color: #d9bfbf; /* Fond rosé */
 }
 
@@ -110,14 +110,17 @@ header nav ul li a:hover {
 .collection-overview {
     display: flex;
     justify-content: space-around;
-    gap: 40px;
-    padding: 100px 50px;
+    gap: 20px;
+    padding: 40px 5%;
     background-color: #e8d9d2; /* Fond légèrement beige */
+    flex-wrap: wrap; /* Permet d'adapter les images sur petits écrans */
 }
 
 .art-piece {
     text-align: center;
-    width: 250px; /* Taille ajustée */
+    flex: 1 1 45%; /* Largeur maximale de 45 % et ajuste selon l’espace */
+    max-width: 45%; /* Empêche de dépasser cette largeur */
+    margin: 10px;
     background-color: #fff; /* Fond blanc */
     padding: 15px;
     border-radius: 10px; /* Coins arrondis */
@@ -125,8 +128,8 @@ header nav ul li a:hover {
 }
 
 .art-piece img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Les images remplissent la largeur du conteneur */
+    height: auto; /* Respecte le ratio d’origine */
     border-radius: 5px; /* Légère arrondie des images */
 }
 
@@ -137,6 +140,7 @@ header nav ul li a:hover {
     font-style: italic; /* Style italique */
     line-height: 1.5;
     color: #333; /* Texte gris foncé */
+
 }
 
 /* Section Galerie (Page 2) */
@@ -148,7 +152,7 @@ header nav ul li a:hover {
 
 .gallery-preview .gallery-image {
     width: 100%;
-    height: Big;
+    height: auto;
     margin-bottom: 20px;
 }
 
