@@ -147,8 +147,8 @@ header nav ul li a:hover {
 }
 
 .gallery-preview .gallery-image {
-    width: 150%;
-    height: auto;
+    width: 100%;
+    height: Big;
     margin-bottom: 20px;
 }
 
