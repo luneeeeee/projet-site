@@ -1,21 +1,19 @@
 
-/* --- Reset Général --- */
+/* Reset général */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- Corps de la page --- */
 body {
-    font-family: 'Koulen', sans-serif;
-    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    background-color: #F5F5F5;
-    color: #000;
 }
 
-/* --- Header --- */
+/* Header */
 header {
     background-color: #000;
     padding: 15px 0;
@@ -38,10 +36,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ffd700; /* Couleur dorée au survol */
+    color: #ffd700;
 }
 
-/* --- Bannière principale (Page 1 et Page 2) --- */
+/* Bannière principale */
 .banner, .collection-banner {
     position: relative;
     text-align: center;
@@ -53,7 +51,7 @@ header nav ul li a:hover {
     height: auto;
 }
 
-.banner .gallery-title, .collection-banner .banner-title {
+.banner .gallery-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,50 +64,13 @@ header nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* --- Bannière pour Claude Monet --- */
-.banner {
-    width: 375px;
-    height: 39px;
-    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
-}
-
-.banner-full {
-    width: 375px;
-    height: 818px;
-    background: #C9AAAA;
-}
-
-.banner-image {
-    width: 375px;
-    height: 228px;
-    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
-}
-
-.banner-title {
-    width: 297px;
-    height: 72px;
-    color: #E4EA97;
-    font-size: 48px;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.banner-subtitle {
-    width: 155px;
-    height: 18px;
-    color: #FFF;
-    font-size: 48px;
-    line-height: normal;
-}
-
-/* --- Section Collections --- */
+/* Section Collections */
 .collections {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     padding: 40px 20px;
-    background-color: #d9bfbf; /* Fond rosé */
+    background-color: #d9bfbf;
 }
 
 .collection-item {
@@ -117,168 +78,44 @@ header nav ul li a:hover {
     width: 30%;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
 }
 
-.collection-item:hover {
-    transform: scale(1.05); /* Zoom au survol */
+/* Section Claude Monet */
+.monet-section .monet-banner {
+    position: relative;
+    text-align: center;
 }
 
-.collection-item h3 {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    color: #000;
-}
-
-.collection-item img {
+.monet-banner img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    transition: opacity 0.3s;
 }
 
-.collection-item img:hover {
-    opacity: 0.9;
+.monet-banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Koulen', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* --- Section À Propos --- */
 .about-section {
-    width: 375px;
-    height: auto;
     padding: 20px;
+    background-color: #e8d9d2;
 }
 
-.about-title {
-    width: 186px;
-    height: 59px;
-    color: #000;
-    font-size: 36px;
-    font-style: normal;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.follow-us .social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
 }
 
-.about-text {
-    width: 343px;
-    height: auto;
-    color: #000;
-    font-size: 13px;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* --- Séparateurs --- */
-.separator {
-    width: 373px;
-    height: 35px;
-    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
-}
-
-.divider {
-    width: 375px;
-    height: 4px;
-    background: #F5F5F5;
-}
-
-/* --- Section Œuvres (Page 2) --- */
-.collection-overview {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 40px 5%;
-    background-color: #e8d9d2; /* Fond légèrement beige */
-    flex-wrap: wrap; /* Permet d'adapter les images sur petits écrans */
-}
-
-.art-piece {
+/* Pied de page */
+footer {
+    background-color: #D9D9D9;
     text-align: center;
-    flex: 1 1 45%; /* Largeur maximale de 45 % et ajuste selon l’espace */
-    max-width: 45%; /* Empêche de dépasser cette largeur */
-    margin: 10px;
-    background-color: #fff; /* Fond blanc */
-    padding: 15px;
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre subtile */
-}
-
-.art-piece img {
-    width: 100%; /* Les images remplissent la largeur du conteneur */
-    height: auto; /* Respecte le ratio d’origine */
-    border-radius: 5px; /* Légère arrondie des images */
-}
-
-.art-piece p {
-    margin-top: 10px;
-    font-family: 'Georgia', serif; /* Police élégante */
-    font-size: 14px; /* Taille lisible */
-    font-style: italic; /* Style italique */
-    line-height: 1.5;
-    color: #333; /* Texte gris foncé */
-}
-
-/* --- Section Horaires --- */
-.hours-container {
-    width: 187px;
-    height: 128px;
-    background: #DCD0DD;
     padding: 10px;
-}
-
-.hours-text {
-    color: #000;
-    font-size: 12px;
-    line-height: 1.5;
-}
-
-/* --- Section Suivez-Nous --- */
-.follow-container {
-    width: 348px;
-    height: 81px;
-    padding: 10px;
-}
-
-.follow-text {
-    color: #000;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
-.social-icons {
-    width: 188px;
-    height: 128px;
-    background: #95ACBD;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.social-icon {
-    width: 119px;
-    height: 80px;
-    background: url('<path-to-image>') lightgray 50% / cover no-repeat;
-}
-
-/* --- Pied de page --- */
-.footer {
-    width: 375px;
-    height: 20px;
-    background: #D9D9D9;
-}
-
-/* --- SVG Icônes --- */
-.svg-icon {
-    width: 24px;
-    height: 22px;
-}
-
-.svg-icon path {
-    stroke: black;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
 }
