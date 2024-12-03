@@ -1,88 +1,122 @@
-
-/* Reset général */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Général */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
     color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #000;
-    padding: 15px 0;
-    text-align: center;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #000;
     justify-content: center;
-    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    transition: color 0.3s;
+    font-size: 1rem;
+    padding: 10px 15px;
 }
 
 header nav ul li a:hover {
-    color: #ffd700;
+    background: #555;
+    border-radius: 5px;
 }
 
 /* Bannière principale */
-.banner, .collection-banner {
+.banner {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.banner img, .collection-banner img {
+.banner img {
     width: 100%;
     height: auto;
+    filter: brightness(60%);
 }
 
-.banner .gallery-title {
+.gallery-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Koulen', sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    color: #F5F5F5;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.gallery-title h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.gallery-title h2 {
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /* Section Collections */
 .collections {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 40px 20px;
-    background-color: #d9bfbf;
-}
-
-.collection-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
     text-align: center;
-    width: 30%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
 }
 
-/* Section Claude Monet */
-.monet-section .monet-banner {
+.collection-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.collection-item h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Bannière Collection */
+.collection-banner {
+    position: relative;
+    text-align: center;
+}
+
+.collection-banner img {
+    width: 100%;
+    height: auto;
+    filter: brightness(60%);
+}
+
+.collection-banner .banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.collection-banner .banner-title h1 {
+    font-size: 3.5rem;
+}
+
+/* Section Artiste */
+.monet-banner {
     position: relative;
     text-align: center;
 }
@@ -90,32 +124,76 @@ header nav ul li a:hover {
 .monet-banner img {
     width: 100%;
     height: auto;
+    filter: brightness(50%);
 }
 
 .monet-banner-text {
     position: absolute;
-    top: 50%;
+    bottom: 20px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Koulen', sans-serif;
+    transform: translateX(-50%);
+    text-align: center;
     color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.about-section {
-    padding: 20px;
-    background-color: #e8d9d2;
+.monet-banner-text h1, .monet-banner-text h2 {
+    margin: 0;
 }
 
-.follow-us .social-icons img {
+.monet-banner-text h1 {
+    font-size: 2.5rem;
+}
+
+.monet-banner-text h2 {
+    font-size: 2rem;
+}
+
+.monet-banner-text p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.social-icons a img {
     width: 40px;
     height: 40px;
-    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
 }
 
 /* Pied de page */
 footer {
-    background-color: #D9D9D9;
+    background: #000;
+    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1rem 0;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
 }
