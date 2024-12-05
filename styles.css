@@ -1,3 +1,36 @@
+/* Général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8d7da; /* Fond rose pour tout le site */
+}
+
+/* Header */
+header {
+    background: black;
+    padding: 1rem 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu li {
+    margin: 0 15px;
+}
+
+header .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /* Bannière principale */
 .banner {
     position: relative;
@@ -9,41 +42,39 @@
     filter: brightness(60%);
 }
 
-.gallery-title {
+.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: black;
 }
 
-.gallery-title h1 {
-    font-size: 4rem; /* Taille du titre principal */
-    color: black; /* Couleur noire */
+.banner-text h1 {
+    font-size: 4rem; /* Taille du titre */
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
 }
 
-.gallery-title h2 {
-    font-size: 3rem; /* Taille du sous-titre */
+.banner-text h2 {
+    font-size: 2.5rem; /* Taille du sous-titre */
     color: #f0dc82; /* Couleur jaune clair */
-    font-weight: normal;
     margin-top: 1rem;
 }
 
 /* Collections */
 .collections {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem;
-    background-color: #f8d7da; /* Fond rose */
     gap: 1rem;
 }
 
 .collection-item {
-    flex: 1;
     text-align: center;
+    flex: 1;
 }
 
 .collection-item img {
@@ -60,88 +91,29 @@
 .collection-item h3 {
     margin-top: 1rem;
     font-size: 1.5rem;
-    font-weight: bold;
     text-transform: uppercase;
-}
-
-/* Bannière secondaire */
-.collection-banner {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.collection-banner img {
-    width: 100%;
-    filter: brightness(60%);
-}
-
-.collection-banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Section Œuvres */
-.art-gallery {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-}
-
-.art-piece img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-/* Section Claude Monet */
-.about-monet {
-    padding: 2rem;
-}
-
-.monet-header {
-    position: relative;
-    text-align: center;
-}
-
-.monet-header img {
-    width: 100%;
-    filter: brightness(50%);
-}
-
-.monet-text {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Galerie */
-.gallery-preview img {
-    width: 100%;
 }
 
 /* Pied de page */
 footer {
-    background: #000;
-    color: #fff;
+    background: black;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
-.footer-links {
+footer .footer-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 15px;
 }
 
-.footer-links a {
+footer .footer-links a {
     color: white;
     text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
 }
