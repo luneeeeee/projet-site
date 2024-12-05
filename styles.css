@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f8d7da; /* Fond rose pour tout le site */
+    background-color: #f8d7da; /* Fond rose pour toutes les pages */
 }
 
 /* Header */
@@ -62,6 +62,65 @@ header .menu li a {
     font-size: 2.5rem; /* Taille du sous-titre */
     color: #f0dc82; /* Couleur jaune clair */
     margin-top: 1rem;
+}
+
+/* Section sur Claude Monet */
+.about-monet {
+    padding: 2rem;
+}
+
+.monet-header {
+    position: relative;
+    text-align: center;
+}
+
+.monet-header img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.monet-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.monet-text h1 {
+    font-size: 4.5rem; /* Taille agrandie */
+    color: black; /* Couleur noire */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.monet-text h2 {
+    font-size: 3rem; /* Taille agrandie pour "Claude Monet" */
+    color: #f0dc82; /* Couleur jaune clair */
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+/* Section Horaires */
+.opening-hours {
+    background-color: #f8d7da; /* Fond rose pour rester cohérent */
+    padding: 2rem;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.opening-hours h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.opening-hours p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
 }
 
 /* Collections */
