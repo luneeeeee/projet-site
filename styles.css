@@ -3,9 +3,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f8d7da; /* Fond rose pâle pour tout le site */
+    background-color: #f8d7da; /* Fond rose pâle */
 }
 
+/* En-tête */
 header nav {
     background: #000;
     padding: 1rem 0;
@@ -46,6 +47,7 @@ header nav ul li a {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    font-family: 'Georgia', serif;
 }
 
 .banner-text h1 {
@@ -60,9 +62,14 @@ header nav ul li a {
 /* Collections */
 .collections {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
-    background: none; /* Hérite du fond rose */
+}
+
+.collection-item {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
 }
 
 .collection-item img {
@@ -73,6 +80,11 @@ header nav ul li a {
 
 .collection-item img:hover {
     transform: scale(1.05);
+}
+
+.collection-item h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Bannière secondaire */
@@ -93,6 +105,7 @@ header nav ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Section Œuvres */
@@ -100,7 +113,6 @@ header nav ul li a {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    background: none; /* Hérite du fond rose */
 }
 
 .art-piece img {
@@ -109,10 +121,9 @@ header nav ul li a {
     border-radius: 10px;
 }
 
-/* Section Monet */
+/* Section Claude Monet */
 .about-monet {
     padding: 2rem;
-    background: none; /* Hérite du fond rose */
 }
 
 .monet-header {
