@@ -2,38 +2,39 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4cccc; /* Fond rose */
     color: #333;
-    background-color: #f8d7da; /* Fond rose pour toutes les pages */
 }
 
-/* Header */
-header {
-    background: black;
-    padding: 1rem 0;
-}
-
-header .menu {
+header nav ul {
     display: flex;
-    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    background: #000;
+    justify-content: center;
 }
 
-header .menu li {
+header nav ul li {
     margin: 0 15px;
 }
 
-header .menu li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
 }
 
 /* Bannière principale */
 .banner {
     position: relative;
+    text-align: center;
 }
 
 .banner img {
@@ -48,96 +49,33 @@ header .menu li a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.title-black {
     color: black;
-}
-
-.banner-text h1 {
-    font-size: 4rem; /* Taille du titre */
-    font-weight: bold;
+    font-size: 4rem;
     margin: 0;
-    text-transform: uppercase;
 }
 
-.banner-text h2 {
-    font-size: 2.5rem; /* Taille du sous-titre */
-    color: #f0dc82; /* Couleur jaune clair */
-    margin-top: 1rem;
-}
-
-/* Section sur Claude Monet */
-.about-monet {
-    padding: 2rem;
-}
-
-.monet-header {
-    position: relative;
-    text-align: center;
-}
-
-.monet-header img {
-    width: 100%;
-    height: auto;
-    filter: brightness(50%);
-}
-
-.monet-text {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-.monet-text h1 {
-    font-size: 4.5rem; /* Taille agrandie */
-    color: black; /* Couleur noire */
-    font-weight: bold;
+.title-yellow {
+    color: #e6e600;
+    font-size: 3rem;
     margin: 0;
-    text-transform: uppercase;
 }
 
-.monet-text h2 {
-    font-size: 3rem; /* Taille agrandie pour "Claude Monet" */
-    color: #f0dc82; /* Couleur jaune clair */
-    font-weight: normal;
-    margin-top: 1rem;
-}
-
-/* Section Horaires */
-.opening-hours {
-    background-color: #f8d7da; /* Fond rose pour rester cohérent */
-    padding: 2rem;
-    text-align: center;
-    border-top: 2px solid #ddd;
-}
-
-.opening-hours h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.opening-hours p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    line-height: 1.5;
-}
-
-/* Collections */
+/* Section Collections */
 .collections {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     padding: 2rem;
-    gap: 1rem;
-}
-
-.collection-item {
     text-align: center;
-    flex: 1;
 }
 
 .collection-item img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -148,31 +86,47 @@ header .menu li a {
 }
 
 .collection-item h3 {
-    margin-top: 1rem;
+    margin: 1rem 0 0.5rem;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Bannière Collection */
+.monet-banner {
+    position: relative;
+    text-align: center;
+}
+
+.monet-banner img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.monet-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.monet-text h1 {
+    color: black;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.monet-text h2 {
+    color: #e6e600;
+    font-size: 3rem;
 }
 
 /* Pied de page */
 footer {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-}
-
-footer .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .footer-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline;
+    padding: 1rem 0;
 }
