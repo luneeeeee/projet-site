@@ -3,15 +3,20 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f8d7da; /* Fond rose pâle pour tout le site */
+}
+
+header nav {
+    background: #000;
+    padding: 1rem 0;
 }
 
 header nav ul {
-    display: flex;
     list-style: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    background: #000;
-    justify-content: center;
 }
 
 header nav ul li {
@@ -21,156 +26,117 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    padding: 10px 15px;
-}
-
-header nav ul li a:hover {
-    background: #555;
-    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 /* Bannière principale */
 .banner {
     position: relative;
-    text-align: center;
-    color: white;
 }
 
 .banner img {
     width: 100%;
-    height: auto;
     filter: brightness(60%);
 }
 
-.gallery-title {
+.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
-    font-family: 'Georgia', serif;
 }
 
-.gallery-title h1 {
+.banner-text h1 {
     font-size: 4rem;
     margin: 0;
 }
 
-.gallery-title h2 {
+.banner-text h2 {
     font-size: 2rem;
-    font-weight: 300;
 }
 
-/* Section Collections */
+/* Collections */
 .collections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    justify-content: space-around;
     padding: 2rem;
-    text-align: center;
+    background: none; /* Hérite du fond rose */
 }
 
 .collection-item img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .collection-item img:hover {
     transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.collection-item h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Bannière Collection */
+/* Bannière secondaire */
 .collection-banner {
     position: relative;
     text-align: center;
+    color: white;
 }
 
 .collection-banner img {
     width: 100%;
-    height: auto;
     filter: brightness(60%);
 }
 
-.collection-banner .banner-title {
+.collection-banner h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Georgia', serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
 }
 
-.collection-banner .banner-title h1 {
-    font-size: 3.5rem;
+/* Section Œuvres */
+.art-gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background: none; /* Hérite du fond rose */
 }
 
-/* Section Artiste */
-.monet-banner {
+.art-piece img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Section Monet */
+.about-monet {
+    padding: 2rem;
+    background: none; /* Hérite du fond rose */
+}
+
+.monet-header {
     position: relative;
     text-align: center;
 }
 
-.monet-banner img {
+.monet-header img {
     width: 100%;
-    height: auto;
     filter: brightness(50%);
 }
 
-.monet-banner-text {
+.monet-text {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.monet-banner-text h1, .monet-banner-text h2 {
-    margin: 0;
-}
-
-.monet-banner-text h1 {
-    font-size: 2.5rem;
-}
-
-.monet-banner-text h2 {
-    font-size: 2rem;
-}
-
-.monet-banner-text p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-/* Réseaux sociaux */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 1.5rem;
-}
-
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.1);
+/* Galerie */
+.gallery-preview img {
+    width: 100%;
 }
 
 /* Pied de page */
@@ -181,19 +147,13 @@ footer {
     padding: 1rem 0;
 }
 
-footer .footer-links {
+.footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-footer .footer-links a {
-    color: #fff;
+.footer-links a {
+    color: white;
     text-decoration: none;
-    font-size: 0.9rem;
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline;
 }
