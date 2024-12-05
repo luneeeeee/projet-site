@@ -1,152 +1,158 @@
-/* Fond global */
+/* Général */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4d3cf; /* Fond rose */
-    color: #333;
+    font-family: Koulen, sans-serif;
 }
 
-/* En-tête */
+header {
+    width: 100%;
+    background-color: #000;
+    height: 140px;
+}
+
 header nav ul {
-    background-color: black;
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    align-items: center;
+    height: 100%;
+    color: #FFF;
+    font-size: 40px;
+}
+
+/* Section Accueil */
+#accueil {
+    background-color: #C9AAAA;
+    padding: 20px;
+    text-align: center;
+}
+
+#accueil h1 {
+    color: #000;
+    font-size: 128px;
     margin: 0;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+#accueil h2 {
+    color: #E4EA97;
+    font-size: 128px;
+    margin: 0;
 }
 
-header nav ul li a:hover {
-    color: #f4d3cf;
-}
-
-/* Bannière principale */
-.banner {
-    position: relative;
-    text-align: center;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    filter: brightness(70%);
-}
-
-.gallery-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.gallery-title h1 {
-    font-size: 4rem;
-    color: black;
-}
-
-.gallery-title h2 {
-    font-size: 3rem;
-    color: #f1eb9c; /* Jaune */
-}
-
-/* Collections */
-.collections {
+#accueil .collections {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+}
+
+#accueil .collections div {
+    text-align: center;
+    color: #000;
+}
+
+#accueil .collections h3 {
+    font-size: 24px;
+}
+
+#accueil .collections img {
+    width: 385px;
+    height: 283px;
+}
+
+/* Section Collection */
+#collection {
+    background-color: #C9AAAA;
     padding: 20px;
-}
-
-.collection-item {
     text-align: center;
 }
 
-.collection-item img {
-    width: 300px;
-    border-radius: 10px;
+#collection h1 {
+    color: #000;
+    font-size: 96px;
 }
 
-/* Bannière Coup d’œil */
-.collection-banner img {
+#collection img {
     width: 100%;
-    filter: brightness(70%);
+    max-height: 409px;
+    object-fit: cover;
 }
 
-.banner-title h1 {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Tableaux */
-.artworks {
+#collection .collection-images {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin-top: 20px;
 }
 
-.art-item img {
-    width: 300px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.art-item p {
-    font-style: italic;
+#collection .collection-images div {
     text-align: center;
+    color: #000;
+}
+
+#collection .collection-images img {
+    width: 385px;
+    height: 283px;
+}
+
+#collection .collection-images p {
+    font-family: "Kotta One", serif;
+    font-size: 24px;
+}
+
+/* Section Peintre */
+#artiste {
+    background-color: #C9AAAA;
+    padding: 20px;
+    text-align: center;
+}
+
+#artiste h1 {
+    font-size: 96px;
+    color: #000;
+}
+
+#artiste h2 {
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#artiste .monet-image {
+    width: 464px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#artiste p {
+    font-size: 20px;
+    text-align: justify;
+    color: #000;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 /* Galerie */
-.gallery img {
-    display: block;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-}
-
-/* Page Artiste */
-.artist-banner img {
+#artiste .gallery img {
     width: 100%;
-    filter: brightness(60%);
+    height: auto;
 }
 
-.artist-title {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-}
-
-.artist-title h1, .artist-title h2 {
-    margin: 0;
-}
-
-.hours p {
-    text-align: center;
-    margin: 5px;
-}
-
-/* Pied de page */
+/* Footer */
 footer {
-    background-color: black;
-    color: white;
+    background-color: #D9D9D9;
+    padding: 20px;
     text-align: center;
-    padding: 15px 0;
 }
 
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+footer h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #000;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+footer p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000;
 }
