@@ -156,65 +156,73 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Global Styles */
+body {
+    font-family: 'Koulen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C9AAAA; /* Fond rose doux */
+    color: #333;
+}
 
 /* Section avec l'image plein écran et texte superposé */
 .full-image {
     position: relative;
     width: 100%;
-    height: 500px; /* Ajuste cette hauteur selon votre besoin */
-    overflow: hidden; /* Coupe l'excédent de l'image si nécessaire */
+    height: 400px; /* Hauteur pour l'image */
+    overflow: hidden;
 }
 
 .full-image .background-image {
-    width: 100%; /* Prend toute la largeur */
-    height: 100%; /* Prend toute la hauteur */
-    object-fit: cover; /* Remplit tout en maintenant les proportions */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .full-image .overlay-text {
     position: absolute;
-    top: 50%; /* Centre verticalement */
-    left: 50%; /* Centre horizontalement */
-    transform: translate(-50%, -50%); /* Centre exactement le texte */
-    color: white; /* Texte blanc */
-    font-size: 2.5em; /* Taille du texte */
-    font-family: 'Koulen', sans-serif; /* Police utilisée */
-    text-transform: uppercase; /* Texte en majuscules */
-    text-align: center; /* Centre le texte */
-    background-color: rgba(0, 0, 0, 0.5); /* Légère transparence pour contraster le texte */
-    padding: 10px 20px; /* Espacement autour du texte */
-    border-radius: 5px; /* Arrondi des coins du fond */
-}
-
-
-/* Liste des tableaux */
-.preview-list {
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* Ajout d'espacement entre les tableaux */
-    padding: 20px 0;
-}
-
-.preview-item {
-    width: 400px; /* Taille uniforme pour les tableaux */
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Koulen', sans-serif;
+    text-transform: uppercase;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.preview-item img {
+/* Section des tableaux */
+.paintings {
+    display: flex;
+    justify-content: space-around; /* Espacement uniforme entre les tableaux */
+    align-items: flex-start;
+    gap: 40px; /* Ajoute un écart entre les colonnes */
+    padding: 20px;
+}
+
+.painting-item {
+    background-color: #C9AAAA;
+    text-align: center;
+    width: 45%; /* Les deux tableaux occupent chacun 50% de la largeur */
+}
+
+.painting-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.preview-item p {
-    font-size: 1.1em;
+.painting-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #000;
 }
+
 
 /* Galerie en bas */
 #gallery-bottom img {
