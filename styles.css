@@ -198,20 +198,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     background-color: #C9AAAA; /* Fond rose */
 }
 
 .painting-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px; /* Espace entre les colonnes */
     width: 80%; /* Largeur totale */
 }
 
 .painting-item {
-    width: 45%; /* Chaque tableau occupe 45% de la largeur */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 40%; /* Ajuste la largeur */
 }
 
 .painting-item img {
@@ -222,18 +225,39 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet de relief */
 }
 
-.painting-caption {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #000;
+/* Légende gauche */
+.painting-caption-left {
+    position: absolute;
+    left: -150px; /* Ajuste la distance à gauche */
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 24px;
+    font-family: 'Kotta One', serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: right; /* Alignement du texte à droite */
+}
+
+/* Légende droite */
+.painting-caption-right {
+    position: absolute;
+    right: -150px; /* Ajuste la distance à droite */
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 24px;
+    font-family: 'Kotta One', serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left; /* Alignement du texte à gauche */
 }
 
 /* Trait blanc pour séparation */
 .vertical-line {
     width: 1px;
     background-color: white;
-    height: auto;
-    align-self: stretch;
+    height: 300px; /* Hauteur du trait */
 }
 
 
