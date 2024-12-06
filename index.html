@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie DéDal des Couleurs</title>
-    <link rel="stylesheet" href="styles.CSS">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -18,11 +19,16 @@
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Section Hero -->
     <section id="hero">
         <h1>Galerie DéDal des Couleurs</h1>
+        <div class="hero-image">
+            <img src="images/femmeparapluie.jpg" alt="La femme au parapluie">
+        </div>
     </section>
 
+    <!-- Section Collections -->
     <section id="collections">
         <h2>Collections</h2>
         <div class="collection">
@@ -31,24 +37,52 @@
                 <p>Collection Ballerines</p>
             </div>
             <div class="item">
-                <img src="images/sakura.jpg" alt="Collection Sakura">
+                <img src="images/cerise.jpg" alt="Collection Sakura">
                 <p>Collection Sakura</p>
             </div>
             <div class="item">
-                <img src="images/gadsby.jpg" alt="Collection Gadsby">
+                <img src="images/bal.jpg" alt="Collection Gadsby">
                 <p>Collection Gadsby</p>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>À Propos</h2>
-        <p>Claude Monet (1840-1926) est un peintre français, célèbre représentant de l’impressionnisme...</p>
+    <!-- Section Coup d'Oeil -->
+    <section id="gallery-preview">
+        <h2>Coup d'œil sur la collection</h2>
+        <img src="images/pont.jpg" alt="Le Pont Japonais">
+        <div class="preview">
+            <div>
+                <img src="images/barque.jpg" alt="Les dames du bateau">
+                <p>Les dames du bateau, Claude Monet 1887</p>
+            </div>
+            <div>
+                <img src="images/falaise.jpg" alt="La promenade sur la falaise">
+                <p>La promenade sur la falaise à Pourville, Claude Monet 1882</p>
+            </div>
+            <div>      
+        </div>
     </section>
 
+    <!-- Section À Propos -->
+    <section id="about">
+        <h2>À Propos</h2>
+        <div class="about-content">
+            <img src="images/claudemonet.jpg" alt="Claude Monet">
+            <p>Claude Monet (1840-1926) est un peintre français, célèbre représentant de l’impressionnisme. 
+            Né à Paris, il a grandi au Havre, où il a commencé à peindre des paysages marins. Monet est surtout connu 
+            pour sa série d'œuvres explorant les effets de la lumière et de l'atmosphère, notamment les célèbres 
+            « Nymphéas », inspirés de son jardin à Giverny. Sa peinture « Impression, soleil levant » (1872) a donné 
+            son nom au mouvement impressionniste. Monet a passé sa carrière à peindre en plein air, capturant des scènes 
+            de la nature sous diverses lumières, notamment des séries de cathédrales, de peupliers et de ponts.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="legal">
-            <p>Crédits | Accessibilité | Cookie | Mentions Légales | Données Personnelles</p>
+        <div class="info">
+            <p>Ouvert du mardi au dimanche de 10h à 18h</p>
+            <p>Adresse : ...</p>
         </div>
         <div class="social">
             <a href="#">Facebook</a>
@@ -58,3 +92,5 @@
     </footer>
 </body>
 </html>
+
+
