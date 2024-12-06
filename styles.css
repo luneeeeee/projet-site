@@ -261,17 +261,30 @@ body {
 }
 
 
-/* Galerie en bas */
-#gallery-bottom img {
-    width: 100%;
-    max-width: 1462px;
-    height: 238px; /* Hauteur fixe */
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px; /* Espace avec la section précédente */
+/* Section Galerie */
+.gallery-section {
+    background-color: #C9AAAA; /* Fond rose */
+    padding: 20px 0; /* Marges en haut et en bas */
+    text-align: center;
 }
+
+.gallery-title {
+    color: black;
+    font-size: 96px;
+    font-family: 'Koulen', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 20px; /* Espace entre le titre et l'image */
+}
+
+.gallery-image img {
+    width: 80%; /* Ajuste la largeur de l'image */
+    max-width: 1200px; /* Largeur maximale de l'image */
+    height: auto; /* Garde les proportions */
+    border-radius: 5px; /* Ajoute un léger arrondi aux bords */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre douce */
+}
+
 
 
 /* Claude Monet Section */
