@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,98 +7,85 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#collections">Collections</a></li>
-                <li><a href="#artiste">Artiste</a></li>
-                <li><a href="#boutique">Boutique</a></li>
-                <li><a href="#billetterie">Billetterie</a></li>
+                <li>HOME</li>
+                <li>COLLECTIONS</li>
+                <li>ARTISTE</li>
+                <li>BOUTIQUE</li>
+                <li>BILLETTERIE</li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section Hero -->
+    <!-- Hero Section -->
     <section id="hero">
-        <h1>Galerie DéDal des Couleurs</h1>
         <div class="hero-image">
-            <img src="images/femmeparapluie.jpg" alt="La femme au parapluie">
+            <img src="images/femmeparapluie.jpg" alt="Femme au parapluie">
+            <h1>
+                GALERIE <span class="highlight">DÉDAL DES COULEURS</span>
+            </h1>
         </div>
     </section>
 
-    <!-- Section Collections -->
+    <!-- Collections Section -->
     <section id="collections">
         <h2>Collections</h2>
-        <div class="collection">
-            <div class="item">
+        <div class="collection-list">
+            <div class="collection-item">
                 <img src="images/ballerines.jpg" alt="Collection Ballerines">
-                <p>Collection Ballerines</p>
+                <p>COLLECTION BALLERINES</p>
             </div>
-            <div class="item">
+            <div class="collection-item">
                 <img src="images/cerise.jpg" alt="Collection Sakura">
-                <p>Collection Sakura</p>
+                <p>COLLECTION SAKURA</p>
             </div>
-            <div class="item">
-                <img src="images/bal.jpg" alt="Collection Gadsby">
-                <p>Collection Gadsby</p>
+            <div class="collection-item">
+                <img src="images/bal.jpg" alt="Collection Gatsby">
+                <p>COLLECTION GABSY</p>
             </div>
         </div>
     </section>
 
-    <!-- Section Coup d'Oeil -->
+    <!-- Coup d’œil sur la collection Section -->
     <section id="gallery-preview">
-        <h2>Coup d'œil sur la collection</h2>
-         <img src="images/pont.jpg" alt="Le Pont Japonais">
-        <div class="preview">
-            <div>
-                <img src="images/boat-ladies.jpg" alt="Les dames du bateau">
+        <h2>COUP D’ŒIL SUR LA COLLECTION</h2>
+        <img src="images/pont.jpg" alt="Pont japonais Claude Monet">
+        <div class="preview-list">
+            <div class="preview-item">
+                <img src="images/monet1.jpg" alt="Les dames du bateau">
                 <p>Les dames du bateau, Claude Monet 1887</p>
             </div>
-            <div>
-                <img src="images/cliff.jpg" alt="La promenade sur la falaise">
+            <div class="preview-item">
+                <img src="images/monet2.jpg" alt="La promenade sur la falaise">
                 <p>La promenade sur la falaise à Pourville, Claude Monet 1882</p>
             </div>
-            <div>
             </div>
         </div>
     </section>
 
-    <!-- Section Galerie -->
-    <section id="gallery">
-        <h2 class="visually-hidden">Galerie</h2> <!-- Titre pour l'accessibilité -->
-        <div class="gallery-image">
-            <img src="images/gallerie.webp" alt="Intérieur de la galerie avec le mot 'Galerie'">
-        </div>
-    </section>
-
-    <!-- Section À Propos -->
-    <section id="about">
-        <h2>À Propos</h2>
-        <div class="about-content">
-            <img src="images/claudemonet.jpg" alt="Claude Monet">
-            <p>Claude Monet (1840-1926) est un peintre français, célèbre représentant de l’impressionnisme. 
-            Né à Paris, il a grandi au Havre, où il a commencé à peindre des paysages marins. Monet est surtout connu 
-            pour sa série d'œuvres explorant les effets de la lumière et de l'atmosphère, notamment les célèbres 
-            « Nymphéas », inspirés de son jardin à Giverny. Sa peinture « Impression, soleil levant » (1872) a donné 
-            son nom au mouvement impressionniste. Monet a passé sa carrière à peindre en plein air, capturant des scènes 
-            de la nature sous diverses lumières, notamment des séries de cathédrales, de peupliers et de ponts.</p>
+    <!-- Claude Monet Section -->
+    <section id="claude-monet">
+        <h1>PEINTRE <span class="highlight">CLAUDE MONET</span></h1>
+        <p>1840-1926</p>
+        <div class="monet-content">
+            <div class="monet-image">
+                <img src="images/claude-monet.jpg" alt="Claude Monet">
+            </div>
+            <div class="monet-text">
+                <h2>A PROPOS</h2>
+                <p>
+                    Claude Monet (1840-1926) est un peintre français, fondateur et l’un des plus célèbres représentants du mouvement impressionniste. Né à Paris, il a grandi au Havre, où il a commencé à peindre des paysages marins. Monet est surtout connu pour sa série d'œuvres explorant les effets de la lumière et de l'atmosphère, notamment les célèbres <b>Nymphéas</b>, inspirés de son jardin à Giverny. Sa peinture « <b>Impression, soleil levant</b> » (1872) a donné son nom au mouvement impressionniste. Monet a passé sa carrière à peindre en plein air, capturant des scènes de la nature sous diverses lumières, notamment des séries de cathédrales, de peupliers et de ponts.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="info">
-            <p>Ouvert du mardi au dimanche de 10h à 18h</p>
-            <p>Adresse : ...</p>
-        </div>
-        <div class="social">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
+        <p>Crédits | Accessibilité | Mentions légales | Données personnelles</p>
     </footer>
 </body>
 </html>
-
-
