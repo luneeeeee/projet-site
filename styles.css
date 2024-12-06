@@ -155,58 +155,63 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 /* Global Styles */
 body {
     font-family: 'Koulen', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #C9AAAA; /* Fond rose doux */
+    background-color: #C9AAAA; /* Fond rose */
     color: #333;
 }
 
-/* Section avec l'image plein écran et texte superposé */
-.full-image {
+/* Section avec le pont en arrière-plan */
+.bridge-section {
     position: relative;
     width: 100%;
-    height: 400px; /* Hauteur pour l'image */
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
     overflow: hidden;
 }
 
-.full-image .background-image {
+.bridge-background {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-image: url('images/bridge-collection.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.full-image .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.bridge-title {
     color: white;
     font-size: 2.5em;
-    font-family: 'Koulen', sans-serif;
     text-transform: uppercase;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre derrière le texte */
     padding: 10px 20px;
     border-radius: 5px;
+    text-align: center;
 }
 
 /* Section des tableaux */
-.paintings {
+.painting-section {
     display: flex;
-    justify-content: space-around; /* Espacement uniforme entre les tableaux */
-    align-items: flex-start;
-    gap: 40px; /* Ajoute un écart entre les colonnes */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    background-color: #C9AAAA; /* Fond rose */
+}
+
+.painting-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espace entre les colonnes */
+    width: 80%; /* Largeur totale */
 }
 
 .painting-item {
-    background-color: #C9AAAA;
+    width: 45%; /* Chaque tableau occupe 45% de la largeur */
     text-align: center;
-    width: 45%; /* Les deux tableaux occupent chacun 50% de la largeur */
 }
 
 .painting-item img {
@@ -214,13 +219,21 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet de relief */
 }
 
-.painting-item p {
+.painting-caption {
     margin-top: 10px;
     font-size: 1.2em;
     color: #000;
+}
+
+/* Trait blanc pour séparation */
+.vertical-line {
+    width: 1px;
+    background-color: white;
+    height: auto;
+    align-self: stretch;
 }
 
 
