@@ -1,10 +1,9 @@
-
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Koulen', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8d7d4; /* Fond rose clair uniforme */
+    background-color: #F4D8D8; /* Fond rose doux */
     color: #333;
 }
 
@@ -12,7 +11,8 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header nav ul {
@@ -24,153 +24,169 @@ header nav ul {
     gap: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
+header nav ul li {
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
-/* Section Hero */
+/* Hero Section */
 #hero {
-    text-align: center;
-    padding: 50px 20px;
     position: relative;
-    background-color: #f8d7d4;
+    text-align: center;
+}
+
+#hero .hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
 }
 
 #hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #E4EA97;
 }
 
-.hero-image {
+#hero .highlight {
+    color: #E4EA97;
+}
+
+/* Collections Section */
+#collections {
+    text-align: center;
+    padding: 40px;
+}
+
+#collections h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.collection-list {
     display: flex;
     justify-content: center;
-}
-
-.hero-image img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Section Collections */
-#collections {
-    padding: 40px 20px;
-}
-
-.collection {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
-.collection .item {
-    flex: 1 1 calc(33% - 20px);
-    max-width: 300px;
-    background-color: #fff;
+.collection-item {
+    width: 300px;
+    background-color: white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.collection img {
-    max-width: 100%;
+.collection-item img {
+    width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-/* Section Coup d'Oeil */
+.collection-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Coup d’œil Section */
 #gallery-preview {
-    padding: 40px 20px;
-}
-
-.preview {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.preview div {
-    flex: 1 1 calc(33% - 20px);
-    max-width: 300px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+    padding: 40px;
 }
 
-.preview img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Section Galerie */
-#gallery {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.gallery-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Section À Propos */
-#about {
-    padding: 40px 20px;
-    background-color: #f8d7d4;
-}
-
-#about h2 {
+#gallery-preview h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-#about .about-content {
+.preview-list {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
-#about .about-content img {
-    max-width: 300px;
+.preview-item {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview-item img {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-#about .about-content p {
-    flex: 1;
-    text-align: justify;
+.preview-item p {
+    font-size: 1.1em;
+}
+
+/* Claude Monet Section */
+#claude-monet {
+    text-align: center;
+    padding: 40px;
+    background-color: #F4D8D8;
+}
+
+#claude-monet h1 {
+    font-size: 3em;
+    color: black;
+}
+
+#claude-monet .highlight {
+    color: #E4EA97;
+}
+
+#claude-monet p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.monet-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.monet-image img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.monet-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.monet-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.monet-text p {
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 /* Footer */
 footer {
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px;
 }
 
-footer .social a {
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
+footer p {
+    font-size: 1em;
 }
-
-footer .social a:hover {
-    text-decoration: underline;
-}
-
-
