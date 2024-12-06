@@ -68,9 +68,8 @@ body {
 /* Bannières de fleurs */
 .banner {
     width: 100%; /* Largeur totale de la page */
-    max-width: 1459px; /* Fixe la largeur maximale */
-    height: 49px; /* Fixe la hauteur exacte */
-    object-fit: cover; /* Ajuste les proportions tout en remplissant l'espace */
+    height: 20px; /* Hauteur réduite pour correspondre au design */
+    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
     display: block;
     margin: 0 auto; /* Centrée horizontalement */
 }
@@ -90,7 +89,7 @@ body {
 #main {
     text-align: center;
     padding: 20px;
-    margin-top: 49px; /* Pour éviter de chevaucher la bannière en haut */
+    margin-top: 20px; /* Décalage pour éviter de chevaucher la bannière en haut */
 }
 
 .hero h1 {
