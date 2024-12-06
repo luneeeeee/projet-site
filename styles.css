@@ -164,18 +164,12 @@ body {
     color: #333;
 }
 
-/* Section avec le pont en arrière-plan */
+/* Section avec le pont en arrière-plan et les légendes */
 .bridge-section {
     position: relative;
     width: 100%;
-    height: 400px; /* Ajustez la hauteur selon vos besoins */
-    overflow: hidden;
-}
-
-.bridge-background {
-    width: 100%;
-    height: 100%;
-    background-image: url('images/bridge-collection.jpg'); /* Remplacez par le chemin de votre image */
+    height: 500px; /* Ajustez la hauteur si nécessaire */
+    background-image: url('images/bridge-collection.jpg'); /* Chemin de l'image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -187,32 +181,28 @@ body {
     color: white;
     font-size: 2.5em;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre derrière le texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
 }
 
-/* Section des tableaux */
+/* Section avec tableaux alignés et légendes */
 .painting-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 40px 80px;
     background-color: #C9AAAA; /* Fond rose */
 }
 
 .painting-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espace entre les colonnes */
-    width: 80%; /* Largeur totale */
+    gap: 40px; /* Espace entre les colonnes */
 }
 
 .painting-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
     width: 40%; /* Ajuste la largeur */
 }
@@ -258,33 +248,7 @@ body {
     width: 1px;
     background-color: white;
     height: 300px; /* Hauteur du trait */
-}
-/* Styles pour la section Galerie */
-body {
-    margin: 0;
-    background-color: #c9aaaa; /* Fond rose */
-}
-
-div {
-    position: relative;
-    text-align: center;
-}
-
-img {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover; /* Assure que l'image est bien ajustée dans le cadre */
-}
-
-span {
-    font-family: 'Koulen', sans-serif; /* Police de caractères */
-    font-size: 96px; /* Taille du texte */
-    font-weight: 900; /* Gras */
-    color: black; /* Couleur du texte */
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 20px; /* Espacement horizontal */
 }
 
 
