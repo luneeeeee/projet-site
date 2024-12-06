@@ -74,26 +74,32 @@ body {
 .collection-list {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Assure un alignement en haut pour toutes les collections */
-    gap: 0; /* Suppression des espaces pour ajuster les bordures */
+    align-items: flex-start; /* Alignement en haut pour toutes les collections */
+    gap: 40px; /* Espacement horizontal entre les collections */
 }
 
 .collection-item {
     background-color: #C9AAAA; /* Fond assorti */
     text-align: center;
     width: 300px; /* Taille uniforme des conteneurs */
-    border-right: 2px solid black; /* Trait vertical entre collections */
-    padding-bottom: 10px; /* Ajout d'espace en bas */
+    padding: 10px;
+    position: relative; /* Nécessaire pour le placement des traits de séparation */
 }
 
-.collection-item:last-child {
-    border-right: none; /* Pas de trait pour la dernière collection */
+.collection-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px; /* Décalage pour créer un espace avec les images */
+    height: 100%;
+    width: 2px;
+    background-color: black; /* Trait de séparation vertical */
 }
 
 .title-container {
     border-bottom: 2px solid black; /* Trait sous les titres */
     padding-bottom: 5px; /* Ajout d'espacement au trait */
-    margin-bottom: 10px; /* Espace entre le titre et l'image */
+    margin-bottom: 20px; /* Espace entre le titre et l'image */
 }
 
 .collection-item h2 {
@@ -113,8 +119,9 @@ body {
 }
 
 .collection-item img {
-    width: 100%; /* Remplit toute la largeur du conteneur */
-    height: auto; /* Respecte les proportions */
+    width: 300px; /* Largeur fixe pour uniformiser */
+    height: 400px; /* Hauteur fixe pour aligner toutes les images */
+    object-fit: cover; /* Garde les proportions tout en remplissant l'espace */
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
 }
