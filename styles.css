@@ -65,25 +65,41 @@ body {
     color: #333;
 }
 
-/* Section Collections */
-#collections {
-    padding: 40px;
+header .banner,
+footer .banner {
+    width: 100%; /* Occupe toute la largeur */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    margin-bottom: 20px; /* Espacement sous l'image */
+}
+
+/* Section principale */
+#main {
     text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.hero .highlight {
+    color: #E4EA97; /* Texte en jaune */
 }
 
 .collection-list {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alignement en haut pour toutes les collections */
+    align-items: flex-start;
     gap: 40px; /* Espacement horizontal entre les collections */
 }
 
 .collection-item {
     background-color: #C9AAAA; /* Fond assorti */
     text-align: center;
-    width: 300px; /* Taille uniforme des conteneurs */
+    width: 300px;
     padding: 10px;
-    position: relative; /* Nécessaire pour le placement des traits de séparation */
+    position: relative;
 }
 
 .collection-item:not(:last-child)::after {
@@ -97,20 +113,20 @@ body {
 }
 
 .title-container {
-    border-bottom: 2px solid black; /* Trait sous les titres */
-    padding-bottom: 5px; /* Ajout d'espacement au trait */
-    margin-bottom: 20px; /* Espace entre le titre et l'image */
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .collection-item h2 {
-    font-size: 1.5em; /* Taille du texte */
-    color: #000; /* Couleur noire pour le texte */
-    text-transform: uppercase; /* Texte en majuscules */
-    font-weight: bold; /* Gras */
-    display: flex; /* Pour aligner le texte et la flèche horizontalement */
-    justify-content: space-between; /* Place la flèche à droite */
-    align-items: center; /* Centre verticalement la flèche avec le texte */
-    margin: 0; /* Pas de marge externe */
+    font-size: 1.5em;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
 
 .collection-item .arrow {
@@ -119,11 +135,11 @@ body {
 }
 
 .collection-item img {
-    width: 300px; /* Largeur fixe pour uniformiser */
-    height: 400px; /* Hauteur fixe pour aligner toutes les images */
-    object-fit: cover; /* Garde les proportions tout en remplissant l'espace */
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
