@@ -75,7 +75,7 @@ header nav ul li {
 }
 
 .collection-item {
-    width: 300px;
+    width: 300px; /* Taille uniforme pour tous les conteneurs */
     background-color: white;
     padding: 10px;
     border-radius: 8px;
@@ -85,7 +85,8 @@ header nav ul li {
 
 .collection-item img {
     width: 100%;
-    height: auto;
+    height: 400px; /* Hauteur fixée pour toutes les images */
+    object-fit: cover; /* Garde une proportion correcte */
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -94,6 +95,7 @@ header nav ul li {
     font-size: 1.2em;
     font-weight: bold;
 }
+
 
 /* Coup d’œil Section */
 #gallery-preview {
