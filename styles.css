@@ -27,8 +27,9 @@ nav ul li a {
 
 #hero {
     text-align: center;
-    background-image: url('monet-bg.jpg');
+    background-image: url('images/monet-bg.jpg');
     background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 50px 0;
 }
@@ -54,4 +55,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
 }
