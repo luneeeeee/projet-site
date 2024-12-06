@@ -1,12 +1,11 @@
 
-
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8d7d4; /* Fond rose clair uniforme */
-    color: #333; /* Couleur du texte sombre pour un bon contraste */
+    color: #333;
 }
 
 /* Header */
@@ -35,14 +34,13 @@ header nav ul li a {
 /* Section Hero */
 #hero {
     text-align: center;
-    background-color: #f8d7d4; /* Même fond que le site */
     padding: 50px 20px;
     position: relative;
+    background-color: #f8d7d4;
 }
 
 #hero h1 {
     font-size: 3em;
-    letter-spacing: 2px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -50,34 +48,31 @@ header nav ul li a {
 .hero-image {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
 }
 
 .hero-image img {
     max-width: 80%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ombre subtile */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Section Collections */
 #collections {
     padding: 40px 20px;
-    background-color: #f8d7d4; /* Fond rose uniforme */
 }
 
 .collection {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Responsive pour les petits écrans */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .collection .item {
-    flex: 1 1 calc(33% - 20px); /* Chaque item prend 1/3 de la largeur */
+    flex: 1 1 calc(33% - 20px);
     max-width: 300px;
-    background-color: #fff; /* Blanc pour faire ressortir */
+    background-color: #fff;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -93,7 +88,6 @@ header nav ul li a {
 /* Section Coup d'Oeil */
 #gallery-preview {
     padding: 40px 20px;
-    background-color: #f8d7d4; /* Fond rose uniforme */
 }
 
 .preview {
@@ -104,11 +98,12 @@ header nav ul li a {
 }
 
 .preview div {
-    flex: 1 1 calc(45% - 20px);
-    max-width: 400px;
+    flex: 1 1 calc(33% - 20px);
+    max-width: 300px;
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -118,10 +113,23 @@ header nav ul li a {
     border-radius: 5px;
 }
 
+/* Section Galerie */
+#gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Section À Propos */
 #about {
     padding: 40px 20px;
-    background-color: #f8d7d4; /* Fond rose uniforme */
+    background-color: #f8d7d4;
 }
 
 #about h2 {
@@ -132,20 +140,18 @@ header nav ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Responsive */
+    flex-wrap: wrap;
 }
 
 #about .about-content img {
     max-width: 300px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ombre subtile */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #about .about-content p {
     flex: 1;
-    font-size: 1.1em;
-    line-height: 1.8;
     text-align: justify;
 }
 
@@ -161,34 +167,10 @@ footer .social a {
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 footer .social a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .collection, .preview {
-        flex-direction: column;
-    }
-
-    .collection .item, .preview div {
-        flex: 1 1 100%;
-    }
-
-    #about .about-content {
-        flex-direction: column;
-    }
-
-    #about .about-content img {
-        max-width: 100%;
-    }
-}
 
