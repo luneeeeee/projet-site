@@ -56,53 +56,64 @@ header nav ul li {
 #hero .highlight {
     color: #E4EA97;
 }
-
-/* Collections Section */
-#collections {
-    text-align: center;
-    padding: 40px;
-}
-
-#collections h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.collection-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.collection-item {
-    width: 300px; /* Taille uniforme pour tous les conteneurs */
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.collection-item img {
-    width: 100%;
-    height: 400px; /* Hauteur fixée pour toutes les images */
-    object-fit: cover; /* Garde une proportion correcte */
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.collection-item p {
-    font-size: 1.2em;
-    font-weight: bold;
-}
 /* Global Styles */
 body {
     font-family: 'Koulen', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4D8D8; /* Fond rose doux */
+    background-color: #C9AAAA; /* Fond rose doux */
     color: #333;
 }
+
+/* Section Collections */
+#collections {
+    padding: 40px;
+    text-align: center;
+}
+
+.collection-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; /* Suppression des espaces pour ajuster les bordures */
+}
+
+.collection-item {
+    background-color: #C9AAAA; /* Fond assorti */
+    text-align: center;
+    width: 300px; /* Taille uniforme des conteneurs */
+    border-right: 2px solid black; /* Trait vertical entre collections */
+}
+
+.collection-item:last-child {
+    border-right: none; /* Pas de trait pour la dernière collection */
+}
+
+.collection-item h2 {
+    font-size: 1.5em; /* Taille du texte */
+    color: #000; /* Couleur noire pour le texte */
+    text-transform: uppercase; /* Texte en majuscules */
+    font-weight: bold; /* Gras */
+    display: flex; /* Pour aligner le texte et la flèche horizontalement */
+    justify-content: space-between; /* Place la flèche à droite */
+    align-items: center; /* Centre verticalement la flèche avec le texte */
+    border-bottom: 2px solid black; /* Ligne noire sous le titre */
+    padding: 10px 0; /* Espacement au-dessus et au-dessous du texte */
+    margin-bottom: 10px; /* Espace entre le titre et l'image */
+}
+
+.collection-item .arrow {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.collection-item img {
+    width: 100%; /* Remplit toute la largeur du conteneur */
+    height: auto; /* Respecte les proportions */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
+}
+
 
 /* Coup d’œil Section */
 #gallery-preview {
