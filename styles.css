@@ -1,159 +1,57 @@
-/* Général */
+/* Global Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f8d7da; /* Fond rose pâle pour tout le site */
-}
-
-header nav {
-    background: #000;
-    padding: 1rem 0;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
+header {
+    background-color: #000;
     color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
+    padding: 10px 20px;
 }
 
-/* Bannière principale */
-.banner {
-    position: relative;
-}
-
-.banner img {
-    width: 100%;
-    filter: brightness(60%);
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.banner-text h1 {
-    font-size: 4rem;
+nav ul {
+    list-style: none;
     margin: 0;
-}
-
-.banner-text h2 {
-    font-size: 2rem;
-}
-
-/* Collections */
-.collections {
+    padding: 0;
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-    background: none; /* Hérite du fond rose */
 }
 
-.collection-item img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.collection-item img:hover {
-    transform: scale(1.05);
-}
-
-/* Bannière secondaire */
-.collection-banner {
-    position: relative;
+#hero {
     text-align: center;
-    color: white;
+    background-image: url('monet-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
 }
 
-.collection-banner img {
-    width: 100%;
-    filter: brightness(60%);
-}
-
-.collection-banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-}
-
-/* Section Œuvres */
-.art-gallery {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background: none; /* Hérite du fond rose */
-}
-
-.art-piece img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-/* Section Monet */
-.about-monet {
-    padding: 2rem;
-    background: none; /* Hérite du fond rose */
-}
-
-.monet-header {
-    position: relative;
+#collections {
+    padding: 20px;
     text-align: center;
 }
 
-.monet-header img {
-    width: 100%;
-    filter: brightness(50%);
+.collection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-.monet-text {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+.collection .item img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Galerie */
-.gallery-preview img {
-    width: 100%;
-}
-
-/* Pied de page */
 footer {
-    background: #000;
+    background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
+    padding: 10px 0;
 }
