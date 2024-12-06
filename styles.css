@@ -259,51 +259,32 @@ body {
     background-color: white;
     height: 300px; /* Hauteur du trait */
 }
+/* Styles pour la section Galerie */
+body {
+    margin: 0;
+    background-color: #c9aaaa; /* Fond rose */
+}
 
-
-/* Section Galerie */
-.gallery-section {
-    background-color: #C9AAAA; /* Fond rose */
-    padding: 20px 0; /* Marges en haut et en bas */
+div {
+    position: relative;
     text-align: center;
-    position: relative;
 }
 
-/* Bande blanche au-dessus de l'image */
-.white-strip {
+img {
     width: 100%;
-    height: 20px; /* Hauteur de la bande blanche */
-    background-color: white;
-    margin-bottom: -5px; /* Ajuste pour coller parfaitement avec l'image */
+    max-height: 500px;
+    object-fit: cover; /* Assure que l'image est bien ajustée dans le cadre */
 }
 
-/* Conteneur pour l'image avec le texte superposé */
-.gallery-image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.gallery-image-container img {
-    width: 80%; /* Ajuste la largeur de l'image */
-    max-width: 1200px; /* Largeur maximale */
-    height: auto; /* Garde les proportions */
-    border-radius: 5px;
-}
-
-/* Titre superposé à l'image */
-.gallery-title {
+span {
+    font-family: 'Koulen', sans-serif; /* Police de caractères */
+    font-size: 96px; /* Taille du texte */
+    font-weight: 900; /* Gras */
+    color: black; /* Couleur du texte */
     position: absolute;
-    top: 50%; /* Centré verticalement */
-    left: 50%; /* Centré horizontalement */
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 96px;
-    font-family: 'Koulen', sans-serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    background: rgba(255, 255, 255, 0.7); /* Fond blanc semi-transparent pour lisibilité */
-    padding: 10px 20px; /* Espacement autour du texte */
-    border-radius: 5px; /* Ajoute un léger arrondi */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
