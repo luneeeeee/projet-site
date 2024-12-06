@@ -3,96 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie Dédal des Couleurs</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Galerie DéDal des Couleurs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- En-tête -->
     <header>
         <nav>
-            <ul class="menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">COLLECTIONS</a></li>
-                <li><a href="#">ARTISTE</a></li>
-                <li><a href="#">BOUTIQUE</a></li>
-                <li><a href="#">BILLETTERIE</a></li>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#artiste">Artiste</a></li>
+                <li><a href="#boutique">Boutique</a></li>
+                <li><a href="#billetterie">Billetterie</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Bannière principale -->
-    <section class="banner">
-        <img src="images/femmeparapluie.jpg" alt="Femme avec un parasol">
-        <div class="banner-text">
-            <h1>GALERIE</h1>
-            <h2>DÉDAL DES COULEURS</h2>
-        </div>
+    
+    <section id="hero">
+        <h1>Galerie DéDal des Couleurs</h1>
     </section>
 
-    <!-- Section Collections -->
-    <section class="collections">
-        <div class="collection-item">
-            <h3>COLLECTION BALLERINES</h3>
-            <a href="#"><img src="images/ballerines.jpg" alt="Ballerines"></a>
-        </div>
-        <div class="collection-item">
-            <h3>COLLECTION SAKURA</h3>
-            <a href="#"><img src="images/sakura.jpg" alt="Sakura"></a>
-        </div>
-        <div class="collection-item">
-            <h3>COLLECTION GADSBY</h3>
-            <a href="#"><img src="images/gadsby.jpg" alt="Gadsby"></a>
-        </div>
-    </section>
-
-    <!-- Bannière secondaire -->
-    <section class="collection-banner">
-        <img src="images/pont.jpg" alt="Pont dans un jardin">
-        <h1>COUP D’ŒIL SUR LA COLLECTION</h1>
-    </section>
-
-    <!-- Section Œuvres -->
-    <section class="art-gallery">
-        <div class="art-piece">
-            <img src="images/barque.jpg" alt="Les dames du bateau">
-            <p>Les dames du bateau, Claude Monet 1887</p>
-        </div>
-        <div class="art-piece">
-            <img src="images/falaise.jpg" alt="La promenade sur la falaise">
-            <p>La promenade sur la falaise à Pourville, Claude Monet 1882</p>
-        </div>
-    </section>
-
-    <!-- Section sur Claude Monet -->
-    <section class="about-monet">
-        <header class="monet-header">
-            <img src="images/claudemonet.jpg" alt="Claude Monet">
-            <div class="monet-text">
-                <h1>PEINTRE</h1>
-                <h2>CLAUDE MONET</h2>
-                <p>1840-1926</p>
+    <section id="collections">
+        <h2>Collections</h2>
+        <div class="collection">
+            <div class="item">
+                <img src="ballerines.jpg" alt="Collection Ballerines">
+                <p>Collection Ballerines</p>
             </div>
-        </header>
-        <article>
-            <h2>À PROPOS</h2>
-            <p>Claude Monet (1840-1926) est un peintre français, célèbre représentant de l’impressionnisme...</p>
-        </article>
+            <div class="item">
+                <img src="sakura.jpg" alt="Collection Sakura">
+                <p>Collection Sakura</p>
+            </div>
+            <div class="item">
+                <img src="gadsby.jpg" alt="Collection Gadsby">
+                <p>Collection Gadsby</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Section Galerie -->
-    <section class="gallery-preview">
-        <img src="images/gallery.jpg" alt="Galerie intérieure">
-        <h2>GALERIE</h2>
+    <section id="about">
+        <h2>À Propos</h2>
+        <p>Claude Monet (1840-1926) est un peintre français, célèbre représentant de l’impressionnisme...</p>
     </section>
 
-    <!-- Pied de page -->
     <footer>
-        <div class="footer-links">
-            <a href="#">CRÉDITS</a>
-            <a href="#">ACCESSIBILITÉ</a>
-            <a href="#">COOKIE</a>
-            <a href="#">MENTIONS LÉGALES</a>
-            <a href="#">DONNÉES PERSONNELLES</a>
+        <div class="legal">
+            <p>Crédits | Accessibilité | Cookie | Mentions Légales | Données Personnelles</p>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
         </div>
     </footer>
 </body>
