@@ -158,29 +158,35 @@ body {
 
 
 
-/* Coup d’œil Section */
-#gallery-preview {
-    text-align: center;
-    padding: 40px;
+/* Section avec l'image plein écran et texte superposé */
+.full-image {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajuste cette hauteur selon votre besoin */
+    overflow: hidden; /* Coupe l'excédent de l'image si nécessaire */
 }
 
-.preview-title h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: black;
+.full-image .background-image {
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    object-fit: cover; /* Remplit tout en maintenant les proportions */
 }
 
-/* Image principale */
-.preview-main-image img {
-    width: 100%; /* Utilise toute la largeur disponible */
-    max-width: 1462px;
-    height: auto;
-    margin-bottom: 40px; /* Espace avec les tableaux */
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.full-image .overlay-text {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre exactement le texte */
+    color: white; /* Texte blanc */
+    font-size: 2.5em; /* Taille du texte */
+    font-family: 'Koulen', sans-serif; /* Police utilisée */
+    text-transform: uppercase; /* Texte en majuscules */
+    text-align: center; /* Centre le texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Légère transparence pour contraster le texte */
+    padding: 10px 20px; /* Espacement autour du texte */
+    border-radius: 5px; /* Arrondi des coins du fond */
 }
+
 
 /* Liste des tableaux */
 .preview-list {
