@@ -247,51 +247,71 @@ body {
 
 
 
-/* Claude Monet Section */
-#claude-monet {
+/* Section de l'image et du titre */
+.monet-header {
+    position: relative;
     text-align: center;
-    padding: 40px;
-    background-color: #F4D8D8;
-}
-
-#claude-monet h1 {
-    font-size: 3em;
-    color: black;
-}
-
-#claude-monet .highlight {
-    color: #E4EA97;
-}
-
-#claude-monet p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.monet-content {
+    width: 100%;
+    height: 500px;
+    background: url('claudemonet.jpg') no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    color: white;
 }
 
-.monet-image img {
-    width: 300px;
-    border-radius: 8px;
+.monet-title {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
 }
 
-.monet-text {
-    max-width: 600px;
-    text-align: left;
+.monet-title h1 {
+    font-family: Koulen;
+    font-size: 96px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.monet-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.monet-title h2 {
+    font-family: Koulen;
+    font-size: 96px;
+    font-weight: bold;
+    color: #E4EA97;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.monet-text p {
-    font-size: 1.1em;
-    line-height: 1.5;
+.monet-title p {
+    font-family: Koulen;
+    font-size: 40px;
+    color: white;
+}
+
+/* Section biographie */
+.biography-section {
+    background: #C9AAAA;
+    text-align: center;
+    padding: 50px;
+}
+
+.biography-section h3 {
+    font-family: Koulen;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.biography-section p {
+    font-family: "Kotta One";
+    font-size: 20px;
+    color: black;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 /* Footer */
