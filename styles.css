@@ -155,93 +155,60 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* Global Styles */
-body {
-    font-family: 'Koulen', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #C9AAAA; /* Fond rose */
-    color: #333;
-}
-
-/* Section avec le pont en arrière-plan et les légendes */
-.bridge-section {
+/* Image et titre de la page */
+.coup-doeil-header {
     position: relative;
-    width: 100%;
-    height: 500px; /* Ajustez la hauteur si nécessaire */
-    background-image: url('images/bridge-collection.jpg'); /* Chemin de l'image */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bridge-title {
-    color: white;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
-    padding: 10px 20px;
-    border-radius: 5px;
     text-align: center;
+    background: #C9AAAA;
+    padding: 50px 0;
 }
 
-/* Section avec tableaux alignés et légendes */
-.painting-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 80px;
-    background-color: #C9AAAA; /* Fond rose */
+.coup-doeil-header img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
-.painting-container {
-    display: flex;
-    align-items: center;
-    gap: 40px; /* Espace entre les colonnes */
-}
-
-.painting-item {
+.coup-doeil-header h1 {
     position: relative;
-    width: 40%; /* Ajuste la largeur */
+    top: -40px;
+    font-family: Koulen;
+    font-size: 96px;
+    color: #FFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.painting-item img {
+/* Conteneur principal des tableaux */
+.artworks-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #C9AAAA;
+    padding: 50px;
+}
+
+/* Style pour chaque tableau */
+.artwork-item {
+    text-align: center;
+    max-width: 400px;
+}
+
+.artwork-item img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet de relief */
+    border: 2px solid #000;
+    margin-bottom: 15px;
 }
 
-/* Légende gauche */
-.painting-caption-left {
-    position: absolute;
-    left: -150px; /* Ajuste la distance à gauche */
-    top: 50%;
-    transform: translateY(-50%);
-    color: black;
-    font-size: 24px;
-    font-family: 'Kotta One', serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: right; /* Alignement du texte à droite */
+.artwork-item p {
+    font-family: "Kotta One";
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    margin: 0;
 }
 
-/* Légende droite */
-.painting-caption-right {
-    position: absolute;
-    right: -150px; /* Ajuste la distance à droite */
-    top: 50%;
-    transform: translateY(-50%);
-    color: black;
-    font-size: 24px;
-    font-family: 'Kotta One', serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: left; /* Alignement du texte à gauche */
-}
 
 /* Trait blanc pour séparation */
 .vertical-line {
