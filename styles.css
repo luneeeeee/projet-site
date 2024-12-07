@@ -155,29 +155,55 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* Image et titre de la page */
-.coup-doeil-header {
+/* Bande avec le titre */
+.collection-header {
+    width: 100%;
+    height: 200px;
+    background: url('pont.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    text-align: center;
-    background: #C9AAAA;
-    padding: 50px 0;
 }
 
-.coup-doeil-header img {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-.coup-doeil-header h1 {
-    position: relative;
-    top: -40px;
+.header-title h1 {
     font-family: Koulen;
-    font-size: 96px;
-    color: #FFF;
+    font-size: 48px;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0;
+    position: absolute;
 }
+
+/* Section des tableaux */
+.collection-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background: #C9AAAA;
+}
+
+.painting {
+    text-align: center;
+    max-width: 300px;
+}
+
+.painting img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.painting p {
+    font-family: "Kotta One";
+    font-size: 18px;
+    color: black;
+}
+
 
 /* Conteneur principal des tableaux */
 .artworks-container {
