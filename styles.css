@@ -30,7 +30,7 @@ header nav ul li {
 }
 /* Styles spécifiques pour les liens du menu */
 nav ul li a {
-    color: black; /* Texte noir */
+    color: white; /* Texte blanc */
     text-decoration: none; /* Supprime le soulignement */
     font-family: Koulen, sans-serif; /* Conserve la police de ton design */
     font-size: 20px; /* Ajuste selon la taille souhaitée */
@@ -40,9 +40,8 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #E4EA97; /* Couleur au survol (optionnel) */
-    text-decoration: underline; /* Ajoute un soulignement au survol (optionnel) */
+    text-decoration: none; /* Aucun soulignement au survol */
 }
-
 
 /* Hero Section */
 #hero {
