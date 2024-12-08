@@ -352,3 +352,105 @@ footer {
 footer p {
     font-size: 1em;
 }
+/* Petits écrans (tablettes) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .collection-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .collection-item {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .monet-header {
+        height: 40vh; /* Réduit la hauteur de l'image */
+    }
+
+    .tableaux {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tableau {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horaires, .reseaux-sociaux {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+/* Très petits écrans (smartphones) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .collection-item img {
+        height: auto; /* Ajuste automatiquement la hauteur */
+    }
+
+    .monet-header {
+        height: 30vh; /* Encore plus réduit pour les petits écrans */
+    }
+
+    .header-title h1 {
+        font-size: 2em;
+    }
+
+    .header-title h2 {
+        font-size: 1.5em;
+    }
+
+    .tableaux {
+        flex-direction: column;
+    }
+
+    .tableau-image {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
