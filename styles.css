@@ -285,7 +285,45 @@ body {
     font-size: 20px;
     line-height: 1.6;
 }
+/* Section Horaires et Réseaux Sociaux */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #D9D9D9;
+    padding: 20px;
+}
 
+.horaires, .reseaux-sociaux {
+    width: 45%;
+}
+
+.horaires h3, .reseaux-sociaux h3 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.horaires ul {
+    list-style: none;
+    padding: 0;
+}
+
+.horaires li {
+    font-family: 'Kotta One', serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reseaux-sociaux .icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reseaux-sociaux .icons img {
+    width: 40px;
+    height: 40px;
+}
 
 
 /* Footer */
