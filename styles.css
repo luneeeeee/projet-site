@@ -28,6 +28,21 @@ header nav ul li {
     font-size: 1.5em;
     font-weight: 400;
 }
+/* Styles spécifiques pour les liens du menu */
+nav ul li a {
+    color: black; /* Texte noir */
+    text-decoration: none; /* Supprime le soulignement */
+    font-family: Koulen, sans-serif; /* Conserve la police de ton design */
+    font-size: 20px; /* Ajuste selon la taille souhaitée */
+    font-weight: 400; /* Poids standard */
+    line-height: normal;
+}
+
+nav ul li a:hover {
+    color: #E4EA97; /* Couleur au survol (optionnel) */
+    text-decoration: underline; /* Ajoute un soulignement au survol (optionnel) */
+}
+
 
 /* Hero Section */
 #hero {
