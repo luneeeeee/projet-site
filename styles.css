@@ -286,10 +286,20 @@ body {
     margin: 0 20px; /* Espacement horizontal */
 }
 
+    /* Bande Coquelicot */
+.coquelicot-banner {
+    width: 100%; /* La largeur couvre toute la page */
+    height: 65px; /* Hauteur de la bande */
+    object-fit: cover; /* L'image remplit bien la zone définie */
+    display: block;
+    margin: 0 auto; /* Centrée horizontalement */
+}
+
+
 /* Bande Claude Monet */
 .monet-banner {
     width: 100%;
-    height: 60vh; /* Ajusté pour agrandir la bande */
+    height: 80vh; /* Ajusté pour agrandir la bande */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
