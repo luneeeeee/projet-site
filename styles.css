@@ -294,17 +294,19 @@ body {
     background-color: white;
 }
 
-/* Image Claude Monet et position du texte */
+
+/* Section Claude Monet - Bande avec Image */
 .monet-header {
     position: relative;
     width: 100%;
-    height: 50vh; /* Ajustez selon vos besoins */
+    height: 50vh; /* Ajuste pour faire la moitié de la page */
+    overflow: hidden;
 }
 
-.monet-image {
+.header-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Remplit l'espace tout en gardant les proportions */
 }
 
 .header-title {
@@ -313,41 +315,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: black;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .header-title h1 {
     font-family: 'Koulen', sans-serif;
-    font-size: 96px;
-    color: black;
+    font-size: 64px; /* Taille ajustée */
+    margin: 0;
 }
 
 .header-title h2 {
     font-family: 'Koulen', sans-serif;
     font-size: 48px;
-    color: #E4EA97;
+    color: #E4EA97; /* Texte jaune */
+    margin: 0;
 }
-
-/* Section Biographie */
-.biography {
-    text-align: center;
-    padding: 20px;
-    background-color: #C9AAAA;
-}
-
-.biography h3 {
-    font-family: 'Koulen', sans-serif;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.biography p {
-    font-family: 'Kotta One', serif;
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-
 
 /* Rectangles (Rose et Bleu) */
 .container {
