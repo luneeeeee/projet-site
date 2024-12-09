@@ -6,6 +6,27 @@ body {
     background-color: #F4D8D8; /* Fond rose doux */
     color: #333;
 }
+/* Bannières de fleurs */
+.banner {
+    width: 100%; /* Largeur totale de la page */
+    height: 20px; /* Hauteur réduite pour correspondre au design de bande légère */
+    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
+    display: block;
+    margin: 0 auto; /* Centrée horizontalement */
+    border: none; /* Supprime tout encadrement */
+    box-shadow: none; /* Supprime tout effet de bordure ou d'ombre */
+}
+
+.banner.top {
+    position: absolute; /* Fixe la bannière en haut */
+    top: 0; /* Pas d'espace au-dessus */
+    left: 0;
+    z-index: 100; /* Toujours visible au-dessus des autres éléments */
+}
+
+.banner.bottom {
+    margin-top: 20px; /* Espacement par rapport au contenu principal */
+}
 
 /* Header */
 header {
