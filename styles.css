@@ -295,42 +295,44 @@ body {
     margin: 0 auto; /* Centrée horizontalement */
 }
 
-
-/* Bande Claude Monet */
-.monet-banner {
-    width: 100%;
-    height: 80vh; /* Ajusté pour agrandir la bande */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Section Claude Monet avec image */
+.claude-monet-section {
     position: relative;
-    background-color: #c9aaaa;
+    width: 100%;
+    height: 50vh; /* Hauteur de la section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Titres positionnés au-dessus de l'image */
-.monet-banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Image de Claude Monet */
+.claude-monet-image {
+    width: 100%; /* L'image prend toute la largeur */
+    height: 100%; /* L'image prend toute la hauteur */
+    object-fit: cover; /* Ajuste l'image pour remplir le cadre */
+    position: absolute; /* Place l'image en arrière-plan */
+    z-index: 1; /* Derrière le texte */
+}
+
+/* Titre sur l'image */
+.claude-monet-title {
+    position: relative;
+    z-index: 2; /* Devant l'image */
     text-align: center;
+    color: white; /* Texte blanc */
+    font-size: 3em;
+    font-family: 'Koulen', sans-serif; /* Police principale */
+    font-weight: 900; /* Texte gras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Effet d'ombre */
+    margin: 0;
 }
 
-.monet-banner-content h1 {
-    font-family: 'Koulen', sans-serif;
-    font-size: 60px; /* Augmentez la taille si nécessaire */
-    color: white;
-    margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+.claude-monet-title .highlight {
+    color: #E4EA97; /* Texte jaune */
+    font-size: 3.5em; /* Accentuation */
 }
 
-.monet-banner-content h2 {
-    font-family: 'Koulen', sans-serif;
-    font-size: 48px; /* Augmentez la taille si nécessaire */
-    color: #E4EA97;
-    margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
+
 
 /* Section À Propos */
 .about-section {
