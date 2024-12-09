@@ -159,65 +159,156 @@
 
 <div style="width: 100%; height: 15px; background: #D9D9D9;"></div>
 
-<!-- Bande Coquelicot -->
-<img style="width: 100%; height: 65px; object-fit: cover;" src="images/coquelicot.jpg" alt="Bannière Coquelicot">
-
-<!-- Contenu du Pied de Page -->
-<div style="display: flex; width: 100%;">
-
-    <!-- Rectangle Rose (À gauche) -->
-    <div style="flex: 1; background: #DCD0DD; padding: 20px; text-align: left;">
-        <div style="display: flex; align-items: center; margin-bottom: 10px;">
-            <img src="images/clock-icon.png" alt="Horloge" style="width: 20px; height: 20px; margin-right: 10px;">
-            <h3 style="margin: 0; font-family: Koulen; font-size: 16px;">OUVERT DU MARDI AU DIMANCHE DE 10H À 18H</h3>
-        </div>
-        <ul style="list-style: none; padding: 0; margin: 0; font-family: Koulen; font-size: 14px;">
-            <li>Dernière entrée : 17H</li>
-            <li>Nocturne le jeudi jusqu’à 21H</li>
-            <li>Dernière entrée : 20H</li>
-        </ul>
-    </div>
-
-    <!-- Rectangle Bleu (À droite) -->
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icônes Réseaux Sociaux</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
- 
-    <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+    <title>Pied de Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Koulen', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Bande grise */
+        .top-bar {
+            width: 100%;
+            height: 15px;
+            background: #D9D9D9;
+        }
+
+        /* Bande Coquelicot */
+        .coquelicot-banner {
+            width: 100%;
+            height: 65px;
+            object-fit: cover;
+        }
+
+        /* Pied de page */
+        .footer {
+            display: flex;
+            width: 100%;
+        }
+
+        .footer .left-section,
+        .footer .right-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-section {
+            background: #DCD0DD;
+            text-align: left;
+        }
+
+        .left-section h3 {
+            font-size: 16px;
+            margin: 0 0 10px 0;
+        }
+
+        .left-section ul {
+            list-style: none;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .left-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .right-section {
+            background: #95ACBD;
+            text-align: center;
+        }
+
+        .right-section h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .social-icons a {
+            color: #000;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .right-section form {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .right-section form input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .right-section form button {
+            background: #000;
+            color: #FFF;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bande grise -->
+    <div class="top-bar"></div>
+
+    <!-- Bande Coquelicot -->
+    <img class="coquelicot-banner" src="images/coquelicot.jpg" alt="Bannière Coquelicot">
+
+    <!-- Contenu du Pied de Page -->
+    <div class="footer">
+        <!-- Rectangle Rose (À gauche) -->
+        <div class="left-section">
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <i class="fas fa-clock" style="font-size: 20px; margin-right: 10px;"></i>
+                <h3>OUVERT DU MARDI AU DIMANCHE DE 10H À 18H</h3>
+            </div>
+            <ul>
+                <li>Dernière entrée : 17H</li>
+                <li>Nocturne le jeudi jusqu’à 21H</li>
+                <li>Dernière entrée : 20H</li>
+            </ul>
+        </div>
+
+        <!-- Rectangle Bleu (À droite) -->
+        <div class="right-section">
+            <h3>SUIVEZ NOUS SUR LES RÉSEAUX</h3>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <h3>INSCRIVEZ VOUS</h3>
+            <form>
+                <label for="mail">MAIL :</label><br>
+                <input type="email" id="mail" name="mail"><br>
+                <label for="nom">NOM :</label><br>
+                <input type="text" id="nom" name="nom"><br>
+                <label for="prenom">PRÉNOM :</label><br>
+                <input type="text" id="prenom" name="prenom"><br>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
     </div>
+
 </body>
 </html>
-
-        <h3 style="font-family: Koulen; font-size: 16px; margin-bottom: 10px;">INSCRIVEZ VOUS</h3>
-        <form style="font-family: Koulen; font-size: 14px; text-align: left;">
-            <label for="mail">MAIL :</label><br>
-            <input type="email" id="mail" name="mail" style="width: 100%; margin-bottom: 10px;"><br>
-            <label for="nom">NOM :</label><br>
-            <input type="text" id="nom" name="nom" style="width: 100%; margin-bottom: 10px;"><br>
-            <label for="prenom">PRÉNOM :</label><br>
-            <input type="text" id="prenom" name="prenom" style="width: 100%; margin-bottom: 10px;"><br>
-            <button type="submit" style="background: #000; color: #FFF; border: none; padding: 5px 10px; cursor: pointer;">S'inscrire</button>
-        </form>
-    </div>
-</div>
-
-
 
 
 
