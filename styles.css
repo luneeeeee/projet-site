@@ -331,99 +331,56 @@ body {
     color: #E4EA97; /* Texte jaune */
     margin: 0;
 }
+/* Bande Grise */
+body {
+    margin: 0;
+}
 
-/* Rectangles (Rose et Bleu) */
-.container {
-    display: flex;
-    flex-direction: row;
+div {
+    box-sizing: border-box;
+}
+
+.bande-grise {
     width: 100%;
+    height: 15px;
+    background: #D9D9D9;
+}
+
+/* Bande Coquelicot */
+.bande-coquelicot {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+}
+
+/* Rectangle Contenu */
+.rectangle-rose,
+.rectangle-bleu {
+    padding: 20px;
     height: auto;
 }
 
-.left-rectangle {
-    flex: 1;
-    background-color: #E6D2E6; /* Rose clair */
-    padding: 20px;
-    text-align: center;
+.rectangle-rose {
+    background: #DCD0DD;
 }
 
-.right-rectangle {
-    flex: 1;
-    background-color: #A3C7D6; /* Bleu clair */
-    padding: 20px;
-    text-align: center;
+.rectangle-bleu {
+    background: #95ACBD;
 }
 
-.left-rectangle h3,
-.right-rectangle h3 {
+/* Icônes des Réseaux Sociaux */
+.icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+form input,
+form button {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
     font-family: 'Koulen', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.left-rectangle p {
-    font-family: 'Koulen', sans-serif;
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-.icon-and-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.icon-and-text svg {
-    width: 40px;
-    height: 40px;
-}
-
-/* Réseaux sociaux */
-.social-icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    line-height: 40px;
-    font-family: 'Koulen', sans-serif;
-    font-size: 1rem;
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    background-color: #E4EA97; /* Jaune clair au survol */
-    color: black;
-}
-
-/* Formulaire d'inscription */
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.form label {
-    font-family: 'Koulen', sans-serif;
-    font-size: 1rem;
-}
-
-.form input {
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 
