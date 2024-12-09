@@ -86,6 +86,8 @@ body {
     object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
     display: block;
     margin: 0 auto; /* Centrée horizontalement */
+    border: none; /* Supprime les bordures */
+    box-shadow: none; /* Supprime les ombres éventuelles */
 }
 
 .banner.top {
