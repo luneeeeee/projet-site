@@ -286,65 +286,64 @@ body {
     margin: 0 20px; /* Espacement horizontal */
 }
 
-
 /* Bande Claude Monet */
 .monet-banner {
     width: 100%;
-    height: 50vh; /* Ajustez pour que l'image prenne la moitié de la page */
+    height: 60vh; /* Ajusté pour agrandir la bande */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    background-color: #c9aaaa; /* Couleur de fond au cas où l'image ne charge pas */
+    background-color: #c9aaaa;
 }
 
-/* Titres positionnés au-dessus de la bande */
+/* Titres positionnés au-dessus de l'image */
 .monet-banner-content {
     position: absolute;
-    top: 50%; /* Centré verticalement */
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
 }
 
 .monet-banner-content h1 {
     font-family: 'Koulen', sans-serif;
-    font-size: 48px;
-    color: white; /* Titre principal en blanc */
+    font-size: 60px; /* Augmentez la taille si nécessaire */
+    color: white;
     margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre légère pour lisibilité */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .monet-banner-content h2 {
     font-family: 'Koulen', sans-serif;
-    font-size: 36px;
-    color: #E4EA97; /* Sous-titre en jaune */
+    font-size: 48px; /* Augmentez la taille si nécessaire */
+    color: #E4EA97;
     margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre légère pour lisibilité */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-
-
-/* Section A Propos */
-.biography {
+/* Section À Propos */
+.about-section {
     padding: 20px;
-    background-color: #C9AAAA; /* Fond assorti à votre design */
+    background-color: #c9aaaa;
     text-align: center;
 }
 
-.biography h3 {
+.about-section h3 {
     font-family: 'Koulen', sans-serif;
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.biography p {
+.about-section p {
     font-family: 'Kotta One', serif;
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #000;
 }
+
 
 
 /* Bande Grise */
