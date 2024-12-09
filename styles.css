@@ -294,19 +294,17 @@ body {
     background-color: white;
 }
 
-
-/* Section Claude Monet - Bande avec Image */
+/* Section Image Claude Monet avec Titre */
 .monet-header {
     position: relative;
     width: 100%;
-    height: 50vh; /* Ajuste pour faire la moitié de la page */
-    overflow: hidden;
+    height: 50vh; /* Ajuste la hauteur de l'image à la moitié de la page */
 }
 
-.header-image {
+.monet-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Remplit l'espace tout en gardant les proportions */
+    object-fit: cover; /* Assure que l'image couvre toute la section sans distorsion */
 }
 
 .header-title {
@@ -316,21 +314,22 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .header-title h1 {
     font-family: 'Koulen', sans-serif;
-    font-size: 64px; /* Taille ajustée */
-    margin: 0;
+    font-size: 96px;
+    color: white; /* Titre en blanc */
+    text-shadow: 2px 2px 5px #E4EA97; /* Légère ombre jaune pour le titre */
 }
 
 .header-title h2 {
     font-family: 'Koulen', sans-serif;
     font-size: 48px;
-    color: #E4EA97; /* Texte jaune */
-    margin: 0;
+    color: #E4EA97; /* Titre secondaire en jaune */
 }
+
+
 /* Bande Grise */
 body {
     margin: 0;
