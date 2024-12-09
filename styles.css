@@ -406,18 +406,23 @@ form button {
     font-family: 'Koulen', sans-serif;
 }
 
-
-/* Footer */
 footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Koulen', sans-serif;
+    font-size: 16px;
 }
 
 footer p {
-    font-size: 1em;
+    margin: 0;
 }
+
+
 /* Petits écrans (tablettes) */
 @media screen and (max-width: 768px) {
     body {
