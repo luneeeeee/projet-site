@@ -286,21 +286,19 @@ body {
     margin: 0 20px; /* Espacement horizontal */
 }
 
-/* Bande pour Claude Monet */
+
+/* Bande Claude Monet */
 .monet-banner {
+    width: 100%;
+    height: 300px; /* Hauteur de la bande */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    width: 100%;
-    height: 300px; /* Même hauteur que la bande "Coup d'œil sur la collection" */
-    overflow: hidden;
 }
 
-.banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Remplit l'espace en respectant les proportions */
-}
-
-.banner-title {
+/* Titre positionné au-dessus de la bande */
+.monet-banner-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -309,17 +307,17 @@ body {
     color: white;
 }
 
-.banner-title h1 {
+.monet-banner-content h1 {
     font-family: 'Koulen', sans-serif;
-    font-size: 48px; /* Taille du texte principale */
-    color: white; /* Texte blanc */
+    font-size: 48px;
+    color: white;
     margin: 0;
 }
 
-.banner-title h2 {
+.monet-banner-content h2 {
     font-family: 'Koulen', sans-serif;
-    font-size: 36px; /* Texte jaune légèrement plus petit */
-    color: #E4EA97; /* Couleur jaune */
+    font-size: 36px;
+    color: #E4EA97;
     margin: 0;
 }
 
