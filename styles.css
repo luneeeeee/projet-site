@@ -290,17 +290,18 @@ body {
 /* Bande Claude Monet */
 .monet-banner {
     width: 100%;
-    height: 300px; /* Hauteur de la bande */
+    height: 50vh; /* Ajustez pour que l'image prenne la moitié de la page */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    background-color: #c9aaaa; /* Couleur de fond au cas où l'image ne charge pas */
 }
 
-/* Titre positionné au-dessus de la bande */
+/* Titres positionnés au-dessus de la bande */
 .monet-banner-content {
     position: absolute;
-    top: 50%;
+    top: 50%; /* Centré verticalement */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -310,16 +311,19 @@ body {
 .monet-banner-content h1 {
     font-family: 'Koulen', sans-serif;
     font-size: 48px;
-    color: white;
+    color: white; /* Titre principal en blanc */
     margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre légère pour lisibilité */
 }
 
 .monet-banner-content h2 {
     font-family: 'Koulen', sans-serif;
     font-size: 36px;
-    color: #E4EA97;
+    color: #E4EA97; /* Sous-titre en jaune */
     margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ombre légère pour lisibilité */
 }
+
 
 
 /* Section A Propos */
