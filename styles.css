@@ -300,94 +300,170 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Section Claude Monet */
-.claude-monet-section {
+/* Bande Claude Monet */
+.claude-monet-banner {
     position: relative;
     text-align: center;
+    overflow: hidden;
+    height: 50vh; /* Ajustable selon vos besoins */
+    width: 100%;
 }
 
 .claude-monet-img {
     width: 100%;
-    height: 50vh;
+    height: 100%;
     object-fit: cover;
 }
 
-.claude-monet-text {
+.claude-monet-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    font-size: 4rem;
     color: white;
-    font-size: 48px;
-    font-weight: bold;
+}
+
+.claude-monet-title span {
+    color: #E4EA97; /* Jaune pâle */
 }
 
 /* Bande blanche */
 .white-divider {
-    background-color: white;
+    width: 100%;
     height: 10px;
+    background-color: white;
 }
 
 /* Section À Propos */
 .a-propos-section {
-    padding: 40px 20px;
-    background-color: #C9AAAA;
+    background-color: #C9AAAA; /* Beige/rose clair */
+    padding: 20px;
     text-align: center;
+    font-family: 'Koulen', sans-serif;
 }
 
 .a-propos-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .a-propos-section p {
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
 }
 
-/* Bande coquelicot */
-.coquelicot-section {
-    text-align: center;
+/* Bande Coquelicot */
+.coquelicot-strip {
+    width: 100%;
+    height: 20vh; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+    position: relative;
 }
 
 .coquelicot-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Tableau Rose et Bleu */
+/* Rectangles (Rose et Bleu) */
 .container {
     display: flex;
+    flex-direction: row;
     width: 100%;
+    height: auto;
 }
 
 .left-rectangle {
     flex: 1;
-    background-color: #F5D3E3;
+    background-color: #E6D2E6; /* Rose clair */
     padding: 20px;
+    text-align: center;
 }
 
 .right-rectangle {
     flex: 1;
-    background-color: #B5D2E8;
+    background-color: #A3C7D6; /* Bleu clair */
     padding: 20px;
+    text-align: center;
+}
+
+.left-rectangle h3,
+.right-rectangle h3 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.left-rectangle p {
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+    margin: 10px 0;
 }
 
 .icon-and-text {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
+}
+
+.icon-and-text svg {
+    width: 40px;
+    height: 40px;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .social-icons a {
-    margin: 0 10px;
-    font-size: 24px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+    border-radius: 50%;
     text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #E4EA97; /* Jaune clair au survol */
     color: black;
 }
 
+/* Formulaire d'inscription */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form label {
+    font-family: 'Koulen', sans-serif;
+    font-size: 1rem;
+}
+
+.form input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 
 /* Footer */
