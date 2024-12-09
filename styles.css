@@ -297,80 +297,86 @@ body {
 }
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Bande Claude Monet */
-.claude-monet-banner {
+.banner {
     position: relative;
-    text-align: center;
-    overflow: hidden;
-    height: 50vh; /* Ajustable selon vos besoins */
     width: 100%;
+    height: 50vh;
+    overflow: hidden;
 }
 
-.claude-monet-img {
+.banner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.claude-monet-title {
+.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Koulen', sans-serif;
-    font-size: 4rem;
-    color: white;
-}
-
-.claude-monet-title span {
-    color: #E4EA97; /* Jaune pâle */
-}
-
-/* Bande blanche */
-.white-divider {
-    width: 100%;
-    height: 10px;
-    background-color: white;
-}
-
-/* Section À Propos */
-.a-propos-section {
-    background-color: #C9AAAA; /* Beige/rose clair */
-    padding: 20px;
     text-align: center;
-    font-family: 'Koulen', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.a-propos-section h2 {
+.banner-text h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    color: #E4EA97;
+    margin: 0;
+}
+
+.banner-text p {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.a-propos-section p {
+.content {
+    padding: 20px;
+    background: #C9AAAA;
+    text-align: center;
+}
+
+.about h3 {
+    margin-top: 0;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.about p {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: justify;
 }
 
-/* Bande Coquelicot */
-.coquelicot-strip {
-    width: 100%;
-    height: 20vh; /* Ajustez la hauteur selon vos besoins */
-    overflow: hidden;
-    position: relative;
+/* Bannières de fleurs */
+.banner {
+    width: 100%; /* Largeur totale de la page */
+    height: 20px; /* Hauteur réduite pour correspondre au design de bande légère */
+    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
+    display: block;
+    margin: 0 auto; /* Centrée horizontalement */
+    border: none; /* Supprime tout encadrement */
+    box-shadow: none; /* Supprime tout effet de bordure ou d'ombre */
 }
 
-.coquelicot-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.banner.top {
+    position: absolute; /* Fixe la bannière en haut */
+    top: 0; /* Pas d'espace au-dessus */
+    left: 0;
+    z-index: 100; /* Toujours visible au-dessus des autres éléments */
 }
 
+.banner.bottom {
+    margin-top: 20px; /* Espacement par rapport au contenu principal */
+}
 /* Rectangles (Rose et Bleu) */
 .container {
     display: flex;
