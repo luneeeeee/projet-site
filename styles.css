@@ -542,3 +542,48 @@ footer p {
         font-size: 0.8em;
     }
 }
+/* -------- Header Styles -------- */
+header {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    padding: 10px 0; /* Espacement réduit pour les petits écrans */
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilisation du flexbox */
+    justify-content: center; /* Centrer horizontalement */
+    gap: 20px; /* Espacement entre les éléments */
+    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
+}
+
+header nav ul li {
+    font-size: 1.5em; /* Taille du texte */
+    font-weight: 400;
+}
+
+/* -------- Responsive Design -------- */
+@media (max-width: 768px) { /* Pour les tablettes et téléphones */
+    header nav ul {
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center; /* Centre chaque élément */
+        gap: 10px; /* Réduit l'espacement entre les éléments */
+    }
+
+    header nav ul li {
+        font-size: 1.2em; /* Réduit la taille du texte */
+    }
+}
+
+@media (max-width: 480px) { 
+    header {
+        padding: 5px 0; /* Réduit encore plus l'espacement */
+    }
+
+    header nav ul li {
+        font-size: 1em; /* Taille du texte encore réduite */
+    }
+}
