@@ -6,14 +6,14 @@ body {
     background-color: #F4D8D8; /* Fond rose doux */
     color: #333;
 }
-/* Bande Coquelicot */
-.bande-coquelicot {
-    width: 100%;
-    height: 30px; /* Hauteur réduite pour une bande fine */
-    object-fit: cover;
+/* Bande coquelicot fine */
+.coquelicot-banner {
+    width: 100%; /* Largeur totale de la page */
+    height: 15px; /* Hauteur très réduite pour obtenir une bande fine */
+    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
     display: block;
-    margin: 0 auto;
-    background-color: black; /* Si aucune couleur de fond n'est nécessaire */
+    margin: 0 auto; /* Centrée horizontalement */
+    border: none; /* Supprime tout encadrement */
 }
 
 /* Header */
@@ -88,14 +88,14 @@ body {
     color: #333;
 }
 
-/* Bande Coquelicot */
-.bande-coquelicot {
-    width: 100%;
-    height: 30px; /* Hauteur réduite pour une bande fine */
-    object-fit: cover;
+/* Bande coquelicot fine */
+.coquelicot-banner {
+    width: 100%; /* Largeur totale de la page */
+    height: 15px; /* Hauteur très réduite pour obtenir une bande fine */
+    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
     display: block;
-    margin: 0 auto;
-    background-color: transparent; /* Si aucune couleur de fond n'est nécessaire */
+    margin: 0 auto; /* Centrée horizontalement */
+    border: none; /* Supprime tout encadrement */
 }
 
 
