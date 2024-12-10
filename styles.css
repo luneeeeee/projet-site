@@ -6,15 +6,13 @@ body {
     background-color: #F4D8D8; /* Fond rose doux */
     color: #333;
 }
-/* Bande coquelicot fine */
-.coquelicot-banner {
-    width: 100%; /* Largeur totale de la page */
-    height: 15px; /* Hauteur très réduite pour obtenir une bande fine */
-    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
-    display: block;
-    margin: 0 auto; /* Centrée horizontalement */
-    border: none; /* Supprime tout encadrement */
+.coquelicot-banner img {
+    width: 100%;
+    height: 49px; /* Taille fine comme demandé */
+    object-fit: cover; /* Pour s'assurer que l'image couvre correctement la zone */
+    display: block; /* Supprime tout espace blanc éventuel en bas de l'image */
 }
+
 
 /* Header */
 header {
@@ -88,16 +86,12 @@ body {
     color: #333;
 }
 
-/* Bande coquelicot fine */
-.coquelicot-banner {
-    width: 100%; /* Largeur totale de la page */
-    height: 15px; /* Hauteur très réduite pour obtenir une bande fine */
-    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
-    display: block;
-    margin: 0 auto; /* Centrée horizontalement */
-    border: none; /* Supprime tout encadrement */
+.coquelicot-banner img {
+    width: 100%;
+    height: 49px; /* Taille fine comme demandé */
+    object-fit: cover; /* Pour s'assurer que l'image couvre correctement la zone */
+    display: block; /* Supprime tout espace blanc éventuel en bas de l'image */
 }
-
 
 /* Section principale */
 #main {
@@ -267,13 +261,12 @@ body {
     height: 300px; /* Hauteur du trait */
     margin: 0 20px; /* Espacement horizontal */
 }
-/* Bande Coquelicot */
-.coquelicot-banner {
+
+.coquelicot-banner img {
     width: 100%;
-    height: 65px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    height: 49px; /* Taille fine comme demandé */
+    object-fit: cover; /* Pour s'assurer que l'image couvre correctement la zone */
+    display: block; /* Supprime tout espace blanc éventuel en bas de l'image */
 }
 
 .monet-banner {
