@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Styles globaux */
 body {
     font-family: 'Koulen', sans-serif;
     margin: 0;
@@ -6,65 +6,48 @@ body {
     background-color: #F4D8D8; /* Fond rose doux */
     color: #333;
 }
-/* Bannières de fleurs */
-.banner {
-    width: 100%; /* Largeur totale de la page */
-    height: 20px; /* Hauteur réduite pour correspondre au design de bande légère */
-    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
-    display: block;
-    margin: 0 auto; /* Centrée horizontalement */
-    border: none; /* Supprime tout encadrement */
-    box-shadow: none; /* Supprime tout effet de bordure ou d'ombre */
-}
 
-.banner.top {
-    position: absolute; /* Fixe la bannière en haut */
-    top: 0; /* Pas d'espace au-dessus */
-    left: 0;
-    z-index: 100; /* Toujours visible au-dessus des autres éléments */
-}
-
-.banner.bottom {
-    margin-top: 20px; /* Espacement par rapport au contenu principal */
-}
-
-/* Header */
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
+}
+
+/* Bande grise */
+.bande-grise {
+    width: 100%;
+    height: 15px;
+    background: #D9D9D9;
+}
+
+/* Bande Coquelicot */
+.bande-coquelicot {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+}
+
+/* Navigation */
+nav ul {
     display: flex;
     justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
     gap: 20px;
 }
 
-header nav ul li {
-    font-size: 1.5em;
-    font-weight: 400;
-}
-/* Styles spécifiques pour les liens du menu */
 nav ul li a {
-    color: white; /* Texte blanc */
-    text-decoration: none; /* Supprime le soulignement */
-    font-family: Koulen, sans-serif; /* Conserve la police de ton design */
-    font-size: 20px; /* Ajuste selon la taille souhaitée */
-    font-weight: 400; /* Poids standard */
-    line-height: normal;
+    text-decoration: none;
+    color: white;
+    font-family: 'Koulen', sans-serif;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
-    color: #E4EA97; /* Couleur au survol (optionnel) */
-    text-decoration: none; /* Aucun soulignement au survol */
+    color: #E4EA97;
 }
 
-/* Hero Section */
+/* Section Hero */
 #hero {
     position: relative;
     text-align: center;
@@ -91,98 +74,17 @@ nav ul li a:hover {
 #hero .highlight {
     color: #E4EA97;
 }
-/* Global Styles */
-body {
-    font-family: 'Koulen', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #C9AAAA; /* Fond rose doux */
-    color: #333;
-}
-
-/* Bannières de fleurs */
-.banner {
-    width: 100%; /* Largeur totale de la page */
-    height: 20px; /* Hauteur réduite pour correspondre au design de bande légère */
-    object-fit: cover; /* Remplit les dimensions tout en respectant les proportions */
-    display: block;
-    margin: 0 auto; /* Centrée horizontalement */
-    border: none; /* Supprime tout encadrement */
-    box-shadow: none; /* Supprime tout effet de bordure ou d'ombre */
-}
-
-.banner.top {
-    position: absolute; /* Fixe la bannière en haut */
-    top: 0; /* Pas d'espace au-dessus */
-    left: 0;
-    z-index: 100; /* Toujours visible au-dessus des autres éléments */
-}
-
-.banner.bottom {
-    margin-top: 20px; /* Espacement par rapport au contenu principal */
-}
 
 /* Section principale */
-#main {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px; /* Décalage pour éviter de chevaucher la bannière en haut */
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 30px;
-}
-
-.hero .highlight {
-    color: #E4EA97; /* Texte en jaune */
-}
-
 .collection-list {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px; /* Espacement horizontal entre les collections */
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .collection-item {
-    background-color: #C9AAAA; /* Fond assorti */
     text-align: center;
-    width: 300px;
-    padding: 10px;
-    position: relative; /* Nécessaire pour le placement des traits de séparation */
-}
-
-.collection-item:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -20px; /* Décalage pour créer un espace avec les images */
-    height: 100%;
-    width: 2px;
-    background-color: black; /* Trait de séparation vertical */
-}
-
-.title-container {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-.collection-item h2 {
-    font-size: 1.5em;
-    color: #000;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: flex; /* Pour aligner le texte et la flèche horizontalement */
-    justify-content: space-between; /* Place la flèche à droite */
-    align-items: center; /* Centre verticalement la flèche avec le texte */
-    margin: 0; /* Pas de marge externe */
-}
-
-.collection-item .arrow {
-    font-size: 1.2em;
-    color: #000;
 }
 
 .collection-item img {
@@ -192,254 +94,148 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.collection-section {
-    background-color: #C9AAAA;
+
+.collection-item h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.collection-item .arrow {
+    font-size: 1.2em;
+    color: black;
+}
+
+/* Pied de page */
+.footer {
+    display: flex;
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer .left-section, 
+.footer .right-section {
+    flex: 1;
     padding: 20px;
 }
 
-/* Bande avec l'image du pont */
-.collection-header {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Ajustez la hauteur selon vos besoins */
-    overflow: hidden;
-}
-
-.header-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* L'image s'adapte pour couvrir toute la largeur */
-    display: block;
-}
-
-/* Titre sur l'image */
-.header-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; /* Texte blanc */
-    font-family: 'Koulen', sans-serif;
-    font-size: 36px; /* Taille légèrement réduite */
-    font-weight: 400;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour lisibilité */
-}
-
-/* Section des tableaux */
-.tableaux {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #C9AAAA; /* Fond assorti */
-    padding: 20px 0;
-}
-
-.tableau {
-    text-align: center;
-    width: 45%;
-}
-
-.tableau-image {
-    width: 100%;
-    max-width: 300px;
-    border: 2px solid #000;
-}
-
-.tableau-description {
-  font-family: 'Kotta One', serif;
-
-.separator-line {
-    width: 1px; /* Fine ligne blanche */
-    background-color: white;
-    height: auto; /* S'ajuste automatiquement à la hauteur des tableaux */
-}
-
-/* Section des Tableaux */
-.tableaux {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #C9AAAA;
-    padding: 20px 0;
-}
-
-.tableau {
-    text-align: center;
-    width: 45%;
-}
-
-.tableau-image {
-    width: 100%;
-    max-width: 300px;
-    border: 2px solid #000;
-}
-
-.tableau-description {
-    font-family: 'Kotta One', serif;
+.footer .left-section h3, 
+.footer .right-section h3 {
     font-size: 18px;
-    margin-top: 10px;
-    color: #000;
+    margin-bottom: 15px;
 }
 
-
-/* Trait blanc pour séparation */
-.vertical-line {
-    width: 1px;
-    background-color: white;
-    height: 300px; /* Hauteur du trait */
-    margin: 0 20px; /* Espacement horizontal */
+.footer .left-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
 }
-/* Bande Coquelicot */
-.coquelicot-banner {
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer form input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer form button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
     width: 100%;
-    height: 65px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
 }
 
+/* Pied de page bas */
+footer p {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Bande Claude Monet */
 .monet-banner {
     width: 100%;
-    height: 60vh; /* Ajustez la hauteur si nécessaire */
-    background-image: url('images/claudemonet.jpg'); /* Chemin de votre image */
-    background-size: cover; /* L'image couvre toute la zone sans répétition */
-    background-position: center; /* L'image est centrée */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-/* Contenu des Titres dans la Bande */
 .monet-banner-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
 }
 
-.monet-banner-content div {
-    margin: 10px 0; /* Espacement entre les éléments */
+.monet-banner-content h1 {
+    font-size: 96px;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Section À Propos */
+.monet-banner-content h2 {
+    font-size: 96px;
+    color: #E4EA97;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.monet-banner-content p {
+    font-size: 64px;
+    color: white;
+}
+
+/* À propos section */
 .about-section {
     padding: 20px;
-    background-color: #c9aaaa;
+    background-color: #C9AAAA;
     text-align: center;
 }
 
 .about-section h3 {
-    font-family: 'Koulen', sans-serif;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 .about-section p {
-    font-family: 'Kotta One', serif;
     font-size: 18px;
     line-height: 1.6;
-    margin: 0 auto;
     max-width: 800px;
-    color: #000;
+    margin: 0 auto;
 }
 
-   
-/* Bande Grise */
-body {
-    margin: 0;
-}
-
-div {
-    box-sizing: border-box;
-}
-
-.bande-grise {
-    width: 100%;
-    height: 15px;
-    background: #D9D9D9;
-}
-
-/* Bande Coquelicot */
-.bande-coquelicot {
-    width: 100%;
-    height: 65px;
-    object-fit: cover;
-}
-
-/* Rectangle Contenu */
-.rectangle-rose,
-.rectangle-bleu {
-    padding: 20px;
-    height: auto;
-}
-
-.rectangle-rose {
-    background: #DCD0DD;
-}
-
-.rectangle-bleu {
-    background: #95ACBD;
-}
-/* Règles spécifiques pour le pied de page */
-.horaires ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'Koulen', sans-serif;
-    font-size: 25px; /* Taille du texte augmentée */
-    line-height: 1.8; /* Espacement entre les lignes amélioré */
-}
-
-.horaires li {
-    margin-bottom: 10px; /* Espace entre les éléments */
-}
-
-/* Icônes des Réseaux Sociaux */
-.icons img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-form input,
-form button {
-    width: 90%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-family: 'Koulen', sans-serif;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Koulen', sans-serif;
-    font-size: 16px;
-}
-
-footer p {
-    margin: 0;
-}
-
-
-/* Petits écrans (tablettes) */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
+/* Responsive Design */
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    nav ul li {
-        text-align: center;
     }
 
     .collection-list {
@@ -447,130 +243,40 @@ footer p {
         gap: 20px;
     }
 
-    .collection-item {
+    .collection-item img {
         width: 100%;
-        margin: 0 auto;
+        height: auto;
     }
 
-    .monet-header {
-        height: 40vh; /* Réduit la hauteur de l'image */
+    .monet-banner {
+        height: 40vh;
     }
 
-    .tableaux {
+    .footer {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .tableau {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .info-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .horaires, .reseaux-sociaux {
-        width: 100%;
         text-align: center;
     }
 
-    footer {
-        font-size: 0.9em;
+    .footer .left-section, 
+    .footer .right-section {
+        padding: 10px;
+    }
+
+    .footer form button {
+        width: auto;
     }
 }
 
-/* Très petits écrans (smartphones) */
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-    }
-
-    .hero h1 {
+@media (max-width: 480px) {
+    h1 {
         font-size: 2.5em;
     }
 
-    .collection-item img {
-        height: auto; /* Ajuste automatiquement la hauteur */
+    .monet-banner {
+        height: 30vh;
     }
 
-    .monet-header {
-        height: 30vh; /* Encore plus réduit pour les petits écrans */
-    }
-
-    .header-title h1 {
-        font-size: 2em;
-    }
-
-    .header-title h2 {
-        font-size: 1.5em;
-    }
-
-    .tableaux {
-        flex-direction: column;
-    }
-
-    .tableau-image {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .info-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer {
-        font-size: 0.8em;
-    }
-}
-/* -------- Header Styles -------- */
-header {
-    background-color: #000; /* Fond noir */
-    color: #fff; /* Texte blanc */
-    padding: 10px 0; /* Espacement réduit pour les petits écrans */
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none; /* Supprime les puces */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Utilisation du flexbox */
-    justify-content: center; /* Centrer horizontalement */
-    gap: 20px; /* Espacement entre les éléments */
-    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
-}
-
-header nav ul li {
-    font-size: 1.5em; /* Taille du texte */
-    font-weight: 400;
-}
-
-/* -------- Responsive Design -------- */
-@media (max-width: 768px) { /* Pour les tablettes et téléphones */
-    header nav ul {
-        flex-direction: column; /* Empile les éléments verticalement */
-        align-items: center; /* Centre chaque élément */
-        gap: 10px; /* Réduit l'espacement entre les éléments */
-    }
-
-    header nav ul li {
-        font-size: 1.2em; /* Réduit la taille du texte */
-    }
-}
-
-@media (max-width: 480px) { 
-    header {
-        padding: 5px 0; /* Réduit encore plus l'espacement */
-    }
-
-    header nav ul li {
-        font-size: 1em; /* Taille du texte encore réduite */
+    .footer form input {
+        width: 100%;
     }
 }
