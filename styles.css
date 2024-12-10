@@ -247,8 +247,13 @@ body {
 }
 
 .tableau-description {
-    font-family: 'Kotta On
+  font-family: 'Kotta One', serif;
 
+.separator-line {
+    width: 1px; /* Fine ligne blanche */
+    background-color: white;
+    height: auto; /* S'ajuste automatiquement à la hauteur des tableaux */
+}
 
 /* Section des Tableaux */
 .tableaux {
