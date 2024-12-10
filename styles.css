@@ -294,13 +294,13 @@ body {
     margin: 0 auto;
 }
 
-/* Bande Claude Monet */
 .monet-banner {
     width: 100%;
-    height: 60vh; /* Agrandit la hauteur pour occuper une grande partie de la page */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 60vh; /* Ajustez la hauteur si nécessaire */
+    background-image: url('images/claude-monet.jpg'); /* Chemin de votre image */
+    background-size: cover; /* L'image couvre toute la zone sans répétition */
+    background-position: center; /* L'image est centrée */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
     position: relative;
 }
 
