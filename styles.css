@@ -293,26 +293,36 @@ body {
 }
 
 
-/* Section À Propos */
 .about-section {
-    padding: 20px;
-    background-color: #c9aaaa;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligne tout au centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    text-align: center; /* Texte centré */
+    background-color: #c9aaaa; /* Fond assorti au design */
+    padding: 40px; /* Espacement intérieur */
+    margin-top: 20px; /* Espacement au-dessus */
 }
 
-.about-section h3 {
+.about-title {
     font-family: 'Koulen', sans-serif;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 40px; /* Taille du titre */
+    font-weight: 400;
+    color: #000; /* Couleur noire */
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Espacement avec le texte */
+    border-bottom: 2px solid black; /* Soulignement du titre */
+    display: inline-block; /* Soulignement aligné au texte */
+    padding-bottom: 5px; /* Espacement sous le texte du titre */
 }
 
-.about-section p {
-    font-family: 'Kotta One', serif;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 auto;
-    max-width: 800px;
-    color: #000;
+.about-text {
+    font-family: 'Kotta One', serif; /* Police élégante pour le texte */
+    font-size: 18px; /* Taille du texte */
+    line-height: 1.8; /* Hauteur de ligne pour une meilleure lisibilité */
+    color: #000; /* Couleur noire */
+    max-width: 800px; /* Largeur maximale du texte */
+    margin: 0 auto; /* Centre le texte horizontalement */
 }
 
    
