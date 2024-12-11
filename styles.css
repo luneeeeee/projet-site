@@ -256,30 +256,42 @@ body {
     height: 300px; /* Hauteur du trait */
     margin: 0 20px; /* Espacement horizontal */
 }
-
-
 .monet-banner {
-    width: 100%;
-    height: 60vh; /* Ajustez la hauteur si nécessaire */
-    background-image: url('images/claudemonet.webp'); /* Chemin de votre image */
-    background-size: cover; /* L'image couvre toute la zone sans répétition */
-    background-position: center; /* L'image est centrée */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
     position: relative;
+    width: 100%;
+    height: 50vh; /* Prend la moitié de la page */
+    overflow: hidden;
 }
 
-/* Contenu des Titres dans la Bande */
+.monet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image couvre toute la bannière */
+}
+
 .monet-banner-content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    left: 5%; /* Aligné sur la gauche */
+    transform: translateY(-50%);
+    text-align: left; /* Alignement des textes à gauche */
 }
 
-.monet-banner-content div {
-    margin: 10px 0; /* Espacement entre les éléments */
+.monet-title span {
+    font-family: 'Koulen', sans-serif;
+    font-size: 96px; /* Taille du texte augmentée */
+    font-weight: 400;
+    line-height: 1.2; /* Espacement entre les lignes */
+    display: block;
 }
+
+.monet-year {
+    font-family: 'Koulen', sans-serif;
+    font-size: 64px; /* Taille du texte pour l'année */
+    font-weight: 400;
+    margin-top: 20px; /* Espacement entre le titre et l'année */
+}
+
 
 /* Section À Propos */
 .about-section {
