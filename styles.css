@@ -308,6 +308,7 @@ div {
 .rectangle-bleu {
     background: #95ACBD;
 }
+
 /* Règles spécifiques pour le pied de page */
 .horaires ul {
     list-style: none;
@@ -329,29 +330,40 @@ div {
     margin-right: 10px;
 }
 
-form input,
-form button {
-    width: 90%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-family: 'Koulen', sans-serif;
+/* Champs de formulaire */
+.form-input {
+    width: 100%; /* Champ qui occupe toute la largeur disponible */
+    padding: 12px; /* Ajout de padding pour augmenter la zone tactile */
+    margin-bottom: 15px; /* Espacement entre les champs */
+    font-size: 16px; /* Taille de police suffisante pour une bonne lisibilité */
+    border: 1px solid #ccc; /* Bordure légère pour contraste visuel */
+    border-radius: 5px; /* Coins arrondis pour un design moderne */
+    box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur totale */
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Koulen', sans-serif;
-    font-size: 16px;
+/* Bouton */
+.submit-button {
+    width: 100%; /* Le bouton occupe toute la largeur du formulaire */
+    padding: 15px; /* Zone tactile augmentée */
+    background-color: #333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte suffisante */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Changement du curseur pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Animation fluide pour le survol */
 }
 
-footer p {
-    margin: 0;
+/* Effet au survol du bouton */
+.submit-button:hover {
+    background-color: #555; /* Couleur légèrement plus claire */
 }
+
+/* Accessibilité des zones tactiles */
+footer form {
+    padding: 20px; /* Espacement interne pour un meilleur confort visuel */
+}
+
 
 
 /* Petits écrans (tablettes) */
