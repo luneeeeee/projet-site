@@ -248,6 +248,27 @@ body {
     color: #000;
 }
 
+/* Style pour l'image */
+.image-container img {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    max-width: 1200px; /* Largeur maximale pour éviter qu'elle dépasse */
+    height: auto; /* Maintient les proportions de l'image */
+    display: block; /* Évite les espaces blancs en dessous de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    border-radius: 5px; /* Ajoute des coins légèrement arrondis (optionnel) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre légère pour un design professionnel */
+}
+
+/* Section contenant l'image (si nécessaire) */
+body {
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    height: 100vh; /* Hauteur de la page complète */
+    background-color: #F4D8D8; /* Fond rose assorti */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 20px; /* Espacement autour de l'image */
+}
 
 /* Trait blanc pour séparation */
 .vertical-line {
