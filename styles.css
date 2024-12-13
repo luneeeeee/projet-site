@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #E4EA97; /* Couleur au survol (optionnel) */
+    color: #bbc70b; /* Couleur au survol (optionnel) */
     text-decoration: none; /* Aucun soulignement au survol */
 }
 
