@@ -196,11 +196,11 @@ body {
 /* Section des tableaux */
 .tableaux {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #C9AAAA; /* Fond assorti */
-    padding: 20px 0;
+    justify-content: space-around; /* Ajoute de l'espace */
+    align-items: flex-start;
+    gap: 60px; /* Ajuste l'espacement horizontal */
 }
+
 
 .tableau {
     text-align: center;
@@ -214,40 +214,41 @@ body {
 }
 
 .tableau-description {
-  font-family: 'Kotta One', serif;
-
-.separator-line {
-    width: 1px; /* Fine ligne blanche */
-    background-color: white;
-    height: auto; /* S'ajuste automatiquement à la hauteur des tableaux */
-}
-
-/* Section des Tableaux */
-.tableaux {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #C9AAAA;
-    padding: 20px 0;
-}
-
-.tableau {
     text-align: center;
-    width: 45%;
-}
-
-.tableau-image {
-    width: 100%;
-    max-width: 300px;
-    border: 2px solid #000;
-}
-
-.tableau-description {
     font-family: 'Kotta One', serif;
     font-size: 18px;
-    margin-top: 10px;
     color: #000;
+    margin-top: 10px;
 }
+
+
+/* Section des Tableaux */
+
+.tableaux {
+    display: flex;
+    justify-content: space-around; /* Ajoute de l'espace */
+    align-items: flex-start;
+    gap: 60px; /* Ajuste l'espacement horizontal */
+}
+
+.tableau {
+    text-align: center;
+    width: 45%;
+}
+
+.tableau-image {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #000;
+}
+.tableau-description {
+    text-align: center;
+    font-family: 'Kotta One', serif;
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+}
+
 
 /* Style pour l'image */
 .image-container img {
