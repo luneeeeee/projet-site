@@ -248,7 +248,7 @@ body {
 /* Style pour l'image */
 .image-container img {
     width: 100%; /* L'image prend toute la largeur disponible */
-    max-width: 1200px; /* Largeur maximale pour éviter qu'elle dépasse */
+    max-width: 1000px; /* Largeur maximale pour éviter qu'elle dépasse */
     height: auto; /* Maintient les proportions de l'image */
     display: block; /* Évite les espaces blancs en dessous de l'image */
     margin: 0 auto; /* Centre l'image horizontalement */
