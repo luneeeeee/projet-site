@@ -329,37 +329,43 @@ div {
 
 /* Champs de formulaire */
 .form-input {
-    width: 100%; /* Champ qui occupe toute la largeur disponible */
-    padding: 12px; /* Ajout de padding pour augmenter la zone tactile */
-    margin-bottom: 15px; /* Espacement entre les champs */
-    font-size: 16px; /* Taille de police suffisante pour une bonne lisibilité */
-    border: 1px solid #ccc; /* Bordure légère pour contraste visuel */
-    border-radius: 5px; /* Coins arrondis pour un design moderne */
-    box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur totale */
+    width: 90%;
+    padding: 12px; /* Augmente la zone clickable */
+    margin-bottom: 16px; /* Espacement entre les champs */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* Bouton */
+/* Bouton de soumission */
 .submit-button {
-    width: 100%; /* Le bouton occupe toute la largeur du formulaire */
-    padding: 15px; /* Zone tactile augmentée */
-    background-color: #333; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    font-size: 18px; /* Taille du texte suffisante */
-    border: none; /* Pas de bordure */
-    border-radius: 5px; /* Coins arrondis */
-    cursor: pointer; /* Changement du curseur pour indiquer que c'est cliquable */
-    transition: background-color 0.3s ease; /* Animation fluide pour le survol */
+    width: 150px; /* Largeur recommandée */
+    height: 48px; /* Hauteur suffisante */
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Effet au survol du bouton */
-.submit-button:hover {
-    background-color: #555; /* Couleur légèrement plus claire */
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #007BFF;
+    color: white;
+    outline: none;
+    border: 2px solid #0056b3;
 }
 
-/* Accessibilité des zones tactiles */
-footer form {
-    padding: 20px; /* Espacement interne pour un meilleur confort visuel */
+/* Formulaire aligné */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 
 
