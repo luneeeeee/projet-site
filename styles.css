@@ -192,15 +192,14 @@ body {
     font-weight: 400;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour lisibilité */
 }
-
 /* Section des tableaux */
 .tableaux {
     display: flex;
-    justify-content: space-around; /* Ajoute de l'espace */
-    align-items: flex-start;
-    gap: 60px; /* Ajuste l'espacement horizontal */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C9AAAA; /* Fond assorti */
+    padding: 20px 0;
 }
-
 
 .tableau {
     text-align: center;
@@ -214,21 +213,16 @@ body {
 }
 
 .tableau-description {
-    text-align: center;
-    font-family: 'Kotta One', serif;
-    font-size: 18px;
-    color: #000;
-    margin-top: 10px;
-}
+    font-family: 'Kotta On
 
 
 /* Section des Tableaux */
-
 .tableaux {
     display: flex;
-    justify-content: space-around; /* Ajoute de l'espace */
-    align-items: flex-start;
-    gap: 60px; /* Ajuste l'espacement horizontal */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C9AAAA;
+    padding: 20px 0;
 }
 
 .tableau {
@@ -241,13 +235,14 @@ body {
     max-width: 300px;
     border: 2px solid #000;
 }
+
 .tableau-description {
-    text-align: center;
     font-family: 'Kotta One', serif;
     font-size: 18px;
-    color: #000;
     margin-top: 10px;
+    color: #000;
 }
+
 
 
 /* Style pour l'image */
