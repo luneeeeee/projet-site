@@ -368,151 +368,191 @@ form {
 
 
 
-
-/* Petits écrans (tablettes) */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li {
-        text-align: center;
-    }
-
-    .collection-list {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .collection-item {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .monet-header {
-        height: 40vh; /* Réduit la hauteur de l'image */
-    }
-
-    .tableaux {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tableau {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .info-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .horaires, .reseaux-sociaux {
-        width: 100%;
-        text-align: center;
-    }
-
-    footer {
-        font-size: 0.9em;
-    }
+/* Global Styles */
+body {
+    font-family: 'Koulen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4D8D8;
+    color: #333;
 }
 
-/* Très petits écrans (smartphones) */
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .collection-item img {
-        height: auto; /* Ajuste automatiquement la hauteur */
-    }
-
-    .monet-header {
-        height: 30vh; /* Encore plus réduit pour les petits écrans */
-    }
-
-    .header-title h1 {
-        font-size: 2em;
-    }
-
-    .header-title h2 {
-        font-size: 1.5em;
-    }
-
-    .tableaux {
-        flex-direction: column;
-    }
-
-    .tableau-image {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    .info-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer {
-        font-size: 0.8em;
-    }
+/* Bannière */
+.banner {
+    width: 100%;
+    height: auto; /* S'ajuste automatiquement */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
 }
-/* -------- Header Styles -------- */
+
+/* Header */
 header {
-    background-color: #000; /* Fond noir */
-    color: #fff; /* Texte blanc */
-    padding: 10px 0; /* Espacement réduit pour les petits écrans */
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
 header nav ul {
-    list-style: none; /* Supprime les puces */
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utilisation du flexbox */
-    justify-content: center; /* Centrer horizontalement */
-    gap: 20px; /* Espacement entre les éléments */
-    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 header nav ul li {
-    font-size: 1.5em; /* Taille du texte */
-    font-weight: 400;
+    font-size: 1.2em;
 }
 
-/* -------- Responsive Design -------- */
-@media (max-width: 768px) { /* Pour les tablettes et téléphones */
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #E4EA97;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+#hero .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: black;
+    text-shadow: 2px 2px 5px #E4EA97;
+}
+
+/* Collection Section */
+.collection-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes pour les petits écrans */
+    padding: 20px;
+}
+
+.collection-item {
+    background-color: #C9AAAA;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer .left-section,
+.footer .right-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.footer .left-section h3,
+.footer .right-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer form input,
+.footer form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer .social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+
+/* Tablettes */
+@media (max-width: 768px) {
     header nav ul {
-        flex-direction: column; /* Empile les éléments verticalement */
-        align-items: center; /* Centre chaque élément */
-        gap: 10px; /* Réduit l'espacement entre les éléments */
+        flex-direction: column;
+        gap: 10px;
     }
 
     header nav ul li {
-        font-size: 1.2em; /* Réduit la taille du texte */
+        font-size: 1em;
+    }
+
+    .collection-list {
+        gap: 15px;
+    }
+
+    .collection-item {
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width: 480px) { 
-    header {
-        padding: 5px 0; /* Réduit encore plus l'espacement */
+/* Smartphones */
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2em;
     }
 
-    header nav ul li {
-        font-size: 1em; /* Taille du texte encore réduite */
+    .collection-item h2 {
+        font-size: 1.2em;
+    }
+
+    .footer form input,
+    .footer form button {
+        font-size: 0.9em;
+    }
+
+    .footer .social-icons a {
+        font-size: 20px;
     }
 }
