@@ -248,7 +248,7 @@ body {
 /* Style pour l'image */
 .image-container img {
     width: 100%; /* L'image prend toute la largeur disponible */
-    max-width: 1000px; /* Largeur maximale pour éviter qu'elle dépasse */
+    max-width: 800px; /* Largeur maximale pour éviter qu'elle dépasse */
     height: auto; /* Maintient les proportions de l'image */
     display: block; /* Évite les espaces blancs en dessous de l'image */
     margin: 0 auto; /* Centre l'image horizontalement */
@@ -365,194 +365,123 @@ form {
     flex-direction: column;
     align-items: center;
 }
-
-
-
-/* Global Styles */
+/* -------- Styles Généraux -------- */
 body {
     font-family: 'Koulen', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4D8D8;
+    background-color: #F4D8D8; /* Fond rose */
     color: #333;
 }
 
-/* Bannière */
-.banner {
-    width: 100%;
-    height: auto; /* S'ajuste automatiquement */
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    box-shadow: none;
+/* Style de l'image */
+.image-container img {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    max-width: 100%; /* Limite la largeur au conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    display: block; /* Évite les espaces blancs en dessous de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre légère */
 }
 
-/* Header */
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Section contenant l'image */
+body {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    min-height: 100vh; /* Assure une hauteur minimum sur l'écran */
+    padding: 20px; /* Espacement autour de l'image */
 }
 
-header nav ul li {
-    font-size: 1.2em;
-}
+/* -------- Responsive Design -------- */
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    color: #E4EA97;
-}
-
-/* Hero Section */
-#hero {
-    position: relative;
-    text-align: center;
-}
-
-#hero .hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-#hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    color: black;
-    text-shadow: 2px 2px 5px #E4EA97;
-}
-
-/* Collection Section */
-.collection-list {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes pour les petits écrans */
-    padding: 20px;
-}
-
-.collection-item {
-    background-color: #C9AAAA;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.collection-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.collection-item h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-/* Pied de page */
-.footer {
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.footer .left-section,
-.footer .right-section {
-    width: 100%;
-    max-width: 500px;
-    margin: 10px;
-}
-
-.footer .left-section h3,
-.footer .right-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.footer form input,
-.footer form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.footer .social-icons a {
-    font-size: 24px;
-    margin: 0 10px;
-}
-
-/* Responsive Design */
-
-/* Tablettes */
-@media (max-width: 768px) {
-    header nav ul {
+/* Responsive pour les tablettes */
+@media screen and (max-width: 768px) {
+    nav ul {
         flex-direction: column;
         gap: 10px;
     }
 
-    header nav ul li {
-        font-size: 1em;
+    nav ul li {
+        text-align: center;
     }
 
     .collection-list {
-        gap: 15px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .collection-item {
-        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .footer {
+    .tableaux {
         flex-direction: column;
         align-items: center;
     }
+
+    .tableau {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        max-width: 90%; /* Limite la largeur pour les tablettes */
+        border-radius: 4px; /* Coins arrondis légèrement réduits */
+    }
+
+    body {
+        padding: 15px; /* Réduit l'espacement autour */
+    }
 }
 
-/* Smartphones */
-@media (max-width: 480px) {
-    #hero h1 {
+/* Responsive pour les smartphones */
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .collection-item img {
+        height: auto; /* Ajuste automatiquement la hauteur */
+    }
+
+    .monet-header {
+        height: 30vh; /* Réduction de la hauteur pour les petits écrans */
+    }
+
+    .header-title h1 {
         font-size: 2em;
     }
 
-    .collection-item h2 {
-        font-size: 1.2em;
+    .header-title h2 {
+        font-size: 1.5em;
     }
 
-    .footer form input,
-    .footer form button {
-        font-size: 0.9em;
+    .tableaux {
+        flex-direction: column;
     }
 
-    .footer .social-icons a {
-        font-size: 20px;
+    .tableau-image {
+        max-width: 90%; /* Réduit la largeur maximale pour s'adapter aux smartphones */
+        margin: 0 auto;
+    }
+
+    .image-container img {
+        max-width: 100%; /* L'image occupe toute la largeur de l'écran */
+        border-radius: 3px; /* Coins arrondis réduits pour un style simple */
+    }
+
+    body {
+        padding: 10px; /* Réduction de l'espacement autour */
+    }
+
+    footer {
+        font-size: 0.8em;
     }
 }
