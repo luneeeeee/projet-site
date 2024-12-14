@@ -34,7 +34,15 @@
             <head>
   <link rel="preload" as="image" href="images/femmeparapluie.webp">
 </head>
-        <img src="images/femmeparapluie.webp" alt="Femme au parapluie" width="300" height="450" loading="lazy">
+        <img src="images/femmeparapluie.webp" 
+            srcset="
+              images/femmeparapluie-small.webp 480w,
+              images/femmeparapluie-medium.webp 800w,
+              images/femmeparapluie-large.webp 1200w,
+            sizes="(max-width: 600px) 480px,
+                   (max-width: 1200px) 800px,
+                   1200px"
+            alt="Femme au parapluie" width="300" height="450" loading="lazy"> 
             <h1>
                 GALERIE <span class="highlight">DÉDAL DES COULEURS</span>
             </h1>
