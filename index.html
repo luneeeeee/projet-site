@@ -77,7 +77,18 @@
   <link rel="preload" as="image" href="images/femmeparapluie-2.webp">
 </head>
 <body>    
-        <img src="images/femmeparapluie-2.webp" alt="Femme au parapluie" width="1920" height="1200"> 
+        <img src="images/femmeparapluie-2.webp" 
+   srcset="images/femmeparapluie-2-small.webp 364w, 
+           images/femmeparapluie-2-medium.webp 768w, 
+           images/femmeparapluie-2-large.webp 1280w, 
+           images/femmeparapluie-2.webp 1920w" 
+   sizes="(max-width: 600px) 364px, 
+          (max-width: 1200px) 768px, 
+          1280px"
+            alt="Femme au parapluie" 
+            width="1920" 
+            height="1200"
+            style="max-width: 100%; height: auto;"> 
 </body>
             <h1>
                 GALERIE <span class="highlight">DÉDAL DES COULEURS</span>
