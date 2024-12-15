@@ -64,6 +64,12 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+.header-image {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Conserve les proportions de l'image */
+}
+
 #hero h1 {
     position: absolute;
     top: 50%;
