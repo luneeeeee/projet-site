@@ -187,10 +187,11 @@ body {
 }
 
 .header-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* L'image s'adapte pour couvrir toute la largeur */
     display: block;
+    max-width: 100%; /* Ajuste automatiquement la taille */
+    height: auto; /* Conserve les proportions */
+    margin: 0 auto; /* Centre l'image */
+    object-fit: cover;
 }
 
 /* Titre sur l'image */
