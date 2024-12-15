@@ -143,7 +143,18 @@
 <body>
     <!-- Bande avec Image et Titre -->
     <div class="collection-header">
-        <img src="images/pont.webp" alt="Pont Claude Monet" width="1920" height="1200" style="width: 100%; height: auto;" class="header-image">
+        <img src="images/pont-small.webp"
+            srcset="images/pont-small.webp 400w, 
+            images/pont-medium.webp 768w, 
+            images/pont-large.webp 1280w, 
+            images/pont.webp 1920w" 
+    sizes="(max-width: 600px) 400px, 
+           (max-width: 1200px) 768px, 
+           1280px"
+            alt="Pont Claude Monet" 
+            width="1920" 
+            height="1200" 
+            style="width: 100%; height: auto;" class="header-image">
         <div class="header-title">
             <h1>COUP D’OEIL SUR LA COLLECTION</h1>
         </div>
