@@ -188,7 +188,8 @@ body {
 
 .header-image {
     display: block;
-    max-width: 100%; /* Ajuste automatiquement la taille */
+    width: 100%
+    max-width: 1920px; /* Taille maximale de l'image */
     height: auto; /* Conserve les proportions */
     margin: 0 auto; /* Centre l'image */
     object-fit: cover;
