@@ -68,6 +68,8 @@ nav ul li a:hover {
     display: block;
     max-width: 100%;
     height: auto; /* Conserve les proportions de l'image */
+    aspect-ratio: 16 / 10; /* Ajoute l'aspect ratio */
+    object-fit: cover; /* Couvre la zone */
 }
 
 #hero h1 {
