@@ -70,7 +70,6 @@ nav ul li a:hover {
     height: auto; /* Conserve les proportions de l'image */
     aspect-ratio: 16 / 10; /* Ajoute l'aspect ratio */
     object-fit: cover; /* Couvre la zone */
-    background-color: #f0f0f0; /* Optionnel : fond temporaire pour éviter le décalage CLS*/
 }
 
 #hero h1 {
