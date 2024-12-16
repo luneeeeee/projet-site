@@ -542,15 +542,9 @@ body {
 
     .tableau-image {
         max-width: 90%; /* Réduit la largeur maximale pour s'adapter aux smartphones */
-        margin: 0 auto;
-       
-        img {
-    /* Règle générale pour les images */
-    display: block; /* Supprime les espaces blancs sous les images */
-    max-width: 100%; /* Empêche le dépassement */
-    height: auto; /* Maintient les proportions */
+        margin: 0 auto;         
 }
-    }
+    
     
 
     .image-container img {
