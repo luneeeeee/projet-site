@@ -262,6 +262,10 @@ img[src*="pont-medium.webp"] {
     font-size: 36px; /* Taille légèrement réduite */
     font-weight: 400;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour lisibilité */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent temporaire */
+    padding: 10px; /* Espace autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    z-index: 10;
 }
 /* Section des tableaux */
 .tableaux {
