@@ -3,309 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name= "description" content ="Dédal des couleurs, galerie d'art sur les oevures de Claude Monet"> 
+    <meta name="description" content="Dédal des couleurs, galerie d'art sur les œuvres de Claude Monet"> 
     <title>Galerie DéDal des Couleurs</title>
-    <link rel="stylesheet" href="styles.css">
-     <!-- CSS Critique intégré directement -->
-  <style>
-    body {
-      font-family: 'Koulen', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #C9AAAA;
-      color: #333;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-    }
-    #hero h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 4em;
-      color: black;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px #E4EA97;
-    }
-  </style>
-
-  <!-- Chargement différé des fichiers CSS non critiques -->
-  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Icones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Préchargement d'image -->
+    <link rel="preload" as="image" href="assets/images/femmeparapluie-2.webp">
 </head>
 <body>
-  <!-- Bande de coquelicots -->
-<div class="coquelicot-banner">
-    <img src="images/coquelicot.webp" alt="Bande fine de coquelicots" />
-</div>
+
+    <!-- BANNIÈRE DE COQUELICOT -->
+    <div class="coquelicot-banner"></div>
 
     <!-- Header -->
     <header>
-<nav>
-    <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="coup-d-oeil-collection.html">COLLECTIONS</a></li>
-        <li><a href="claude-monet.html">ARTISTE</a></li>
-        <li><a href="https://www.marmottan.fr/boutique/" target="_blank" rel="noopener noreferrer">BOUTIQUE</a></li>
-        <li><a href="https://billetterie.marmottan.fr/bin/index.php" target="_blank" rel="noopener noreferrer">BILLETTERIE</a></li>
-    </ul>
-</nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coup-d-oeil-collection.html">COLLECTIONS</a></li>
+                <li><a href="claude-monet.html">ARTISTE</a></li>
+                <li><a href="https://www.marmottan.fr/boutique/" target="_blank" rel="noopener noreferrer">BOUTIQUE</a></li>
+                <li><a href="https://billetterie.marmottan.fr/bin/index.php" target="_blank" rel="noopener noreferrer">BILLETTERIE</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-image">
-            <head>
-  <link rel="preload" as="image" href="images/femmeparapluie-2.webp">
-</head>
-<body>    
-        <img src="images/femmeparapluie-2.webp" 
-        <img src="images/femmeparapluie-2-small.webp" 
-   srcset="images/femmeparapluie-2-small.webp 364w, 
-           images/femmeparapluie-2-medium.webp 768w, 
-           images/femmeparapluie-2-large.webp 1280w, 
-           images/femmeparapluie-2.webp 1920w" 
-   sizes="(max-width: 600px) 364px, 
-          (max-width: 1200px) 768px, 
-          1280px"
-            alt="Femme au parapluie" 
-            width="1920" 
-            height="1200"
-            style="max-width: 100%; height: auto; object-fit: cover;"> 
-</body>
-            <h1>
-                GALERIE <span class="highlight">DÉDAL DES COULEURS</span>
-            </h1>
+            <img 
+               src="assets/images/femmeparapluie-2-large.webp" 
+               srcset="assets/images/femmeparapluie-2-small.webp 364w, 
+                       assets/images/femmeparapluie-2-medium.webp 768w, 
+                       assets/images/femmeparapluie-2-large.webp 1280w, 
+                       assets/images/femmeparapluie-2.webp 1920w" 
+               sizes="(max-width: 600px) 364px, 
+                      (max-width: 1200px) 768px, 
+                      1280px"
+               alt="Femme au parapluie" 
+               width="1920" 
+               height="1200">
+            <h1>GALERIE</br><span class="highlight">DÉDAL DES COULEURS</span></h1>
         </div>
     </section>
-    
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie DéDal des Couleurs</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Section principale -->
-     <section id="main">
+
+    <!-- Section Principale (Exemple Collections) -->
+    <section id="main">
+        <!--
         <div class="hero">
             <h1>Galerie <span class="highlight">DéDal des Couleurs</span></h1>
         </div>
+        -->
         <div class="collection-list">
             <div class="collection-item">
                 <div class="title-container">
                     <h2>COLLECTION BALLERINES <span class="arrow">→</span></h2>
                 </div>
-                <img src="images/ballerines.webp" alt="Collection Ballerines">
+                <img src="assets/images/ballerines.webp" alt="Collection Ballerines">
             </div>
             <div class="collection-item">
                 <div class="title-container">
-                    <h2>COLLECTION SAKURA <span class="arrow">→</span></h2>
+                    <h2>COLLECTION</br>SAKURA <span class="arrow">→</span></h2>
                 </div>
-                <img src="images/cerise.webp" width="563" height="1002" style="max-width: 100%; height: auto;" alt="Collection Sakura">
+                <img src="assets/images/cerise.webp" width="563" height="1002" alt="Collection Sakura">
             </div>
             <div class="collection-item">
                 <div class="title-container">
-                    <h2>COLLECTION GABSY <span class="arrow">→</span></h2>
+                    <h2>COLLECTION</br>GABSY <span class="arrow">→</span></h2>
                 </div>
-                <img src="images/bal.webp" alt="Collection Gadsby" width="735" height="1041" loading="lazy" style="max-width: 100%; height: auto;">
+                <img src="assets/images/bal.webp" alt="Collection Gadsby" width="735" height="1041" loading="lazy">
             </div>
         </div>
     </section>
 
+    <!-- BANNIÈRE DE COQUELICOT -->
+    <div class="coquelicot-banner"></div>
+    <!-- Bande blanche en haut -->
+    <div class="bande-blanche"></div>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Coup d'œil sur la collection</title>
-</head>
-<body>
-    <!-- Bande avec Image et Titre -->
+    <!-- Coup d'œil sur la collection -->
     <div class="collection-header">
-        <img src="images/pont.webp" alt="Pont Claude Monet" width="1920" height="1200" style="width: 100%; height: auto;" class="header-image" loading="eager" fetchpriority="high">
+        <img src="assets/images/pont.webp" alt="Pont Claude Monet" width="1920" height="1200" class="header-image" loading="eager" fetchpriority="high">
         <div class="header-title">
             <h1>COUP D’OEIL SUR LA COLLECTION</h1>
         </div>
     </div>
 
-      <!-- Section des Tableaux -->
+    <!-- Section des Tableaux -->
     <div class="tableaux">
         <div class="tableau">
-            <img src="images/barque.webp" alt="Les dames du bateau, Claude Monet 1887" class="tableau-image">
+            <img src="assets/images/barque.webp" alt="Les dames du bateau, Claude Monet 1887" class="tableau-image">
             <p class="tableau-description">Les dames du bateau, Claude Monet 1887</p>
         </div>
         <div class="tableau">
-            <img src="images/falaise.webp" alt="La promenade sur la falaise à Pourville, Claude Monet 1882" class="tableau-image">
+            <img src="assets/images/falaise.webp" alt="La promenade sur la falaise à Pourville, Claude Monet 1882" class="tableau-image">
             <p class="tableau-description">La promenade sur la falaise à Pourville, Claude Monet 1882</p>
         </div>
     </div>
 
-
-   <div style="background-color: #c9aaaa;">
-    <!-- Bande blanche en haut -->
-    <div style="width: 100%; height: 49px; background-color: white;"></div>
-
-    <!-- Section image avec titre -->
-    <div style="position: relative;">
-        <img src="images/gallerie.webp" alt="Galerie" width="1792" height="1024" style="max-width: 100%; max-height: auto; object-fit: cover;">
-        <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%);">
-            <span style="font-family: Koulen; font-size: 96px; font-weight: 900; color: black;">GALERIE</span>
+    <!-- Galerie -->
+    <div class="galerie-section">
+        <!-- Bande blanche en haut -->
+        <div class="bande-blanche"></div>
+        <!-- Section image avec titre Galerie -->
+        <div class="galerie-image-container">
+            <img src="assets/images/gallerie.webp" alt="Galerie" width="1792" height="1024">
+            <div class="galerie-title">
+                <span>GALERIE</span>
+            </div>
         </div>
     </div>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Claude Monet</title>
-    <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Section contenant l'image -->
+    <!-- Image Claude Monet
     <div class="image-container">
-        <img src="images/noemie.webp" alt="Claude Monet">
+        <img src="assets/images/noemie.webp" alt="Claude Monet">
     </div>
-</body>
-</html>
+    -->
+    <!-- BANNIÈRE DE COQUELICOT -->
+    <div class="coquelicot-banner"></div>
+    
+    <!-- Section Claude Monet -->
+    <section class="monet-section">
+        <div class="monet-image-container">
+            <img src="assets/images/claudemonet.webp" alt="Portrait de Claude Monet" class="monet-image">
+            <div class="monet-text">
+                <h1 class="monet-title">PEINTRE</h1>
+                <h1 class="monet-title highlight">CLAUDE MONET</h1>
+                <p class="monet-subtitle">1840-1926</p>
+            </div>
+        </div>
+    </section>
+    <!-- //Section Claude Monet -->
+
+    <!-- SECTION DE TEXTE "A PROPOS" -->
+    <section class="text-section">
+        <div class="text-content">
+            <h2 class="section-title">A PROPOS</h2>
+            <!--<p class="section-subtitle">Sous-titre explicatif ou descriptif</p>-->
+            <hr class="section-divider">
+            <p class="section-text">
+              Claude Monet (1840-1926) est un peintre français, fondateur et l’un des plus célèbres représentants du mouvement impressionniste. Né à Paris, il a grandi au Havre, où il a commencé à peindre des paysages marins. Monet est surtout connu pour sa série d'œuvres explorant les effets de la lumière et de l'atmosphère, notamment les célèbres **Nymphéas**, inspirés de son jardin à Giverny. Sa peinture « **Impression, soleil levant** » (1872) a donné son nom au mouvement impressionniste. Monet a passé sa carrière à peindre en plein air, capturant des scènes de la nature sous diverses lumières, notamment des séries de cathédrales, de peupliers et de ponts.
+            </p>
+          </div>
+    </section>
+
+    <!-- BANNIÈRE DE COQUELICOT -->
+    <div class="coquelicot-banner"></div>
 
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pied de Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Koulen', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Bande grise */
-        .top-bar {
-            width: 100%;
-            height: 15px;
-            background: #D9D9D9;
-        }
-
-        /* Bande Coquelicot */
-        .coquelicot-banner {
-            width: 100%;
-            height: 65px;
-            object-fit: cover;
-        }
-
-        /* Pied de page */
-        .footer {
-            display: flex;
-            width: 100%;
-        }
-
-        .footer .left-section,
-        .footer .right-section {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .left-section {
-            background: #DCD0DD;
-            text-align: left;
-        }
-
-        .left-section h3 {
-            font-size: 16px;
-            margin: 0 0 10px 0;
-        }
-
-        .left-section ul {
-            list-style: none;
-            padding: 0;
-            font-size: 14px;
-        }
-
-        .left-section ul li {
-            margin-bottom: 5px;
-        }
-
-        .right-section {
-            background: #95ACBD;
-            text-align: center;
-        }
-
-        .right-section h3 {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .social-icons a {
-            color: #000;
-            font-size: 24px;
-            text-decoration: none;
-        }
-
-        .right-section form {
-            text-align: left;
-            font-size: 14px;
-        }
-
-        .right-section form input {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 5px;
-        }
-
-        .right-section form button {
-            background: #000;
-            color: #FFF;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Bande grise -->
+    <!-- Pied de Page -->
     <div class="top-bar"></div>
-
-    <!-- Contenu du Pied de Page -->
     <div class="footer">
-        <!-- Rectangle Rose (À gauche) -->
+        <!-- Section Gauche (Horaires) -->
         <div class="left-section">
-            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                <i class="fas fa-clock" style="font-size: 20px; margin-right: 10px;"></i>
+            <div class="horaires-container">
+                <i class="fas fa-clock"></i>
                 <h1>OUVERT DU MARDI AU DIMANCHE DE 10H À 18H</h1>
             </div>
             <ul>
@@ -315,56 +169,43 @@
             </ul>
         </div>
 
-        <!-- Rectangle Bleu (À droite) -->
-    <!-- Section des réseaux sociaux dans le pied de page -->
-<div class="footer">
-    <div class="right-section">
-        <h2>SUIVEZ NOUS SUR LES RÉSEAUX</h2>
-        <div class="social-icons">
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitez notre page Facebook">
-                <i class="fab fa-facebook" aria-hidden="true"></i>
-            </a>
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/museemarmottanmonet_/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
-            <!-- WhatsApp -->
-            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Contactez-nous via WhatsApp">
-                <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            </a>
+        <!-- Section Droite (Réseaux + Formulaire) -->
+        <div class="right-section">
+            <h2>SUIVEZ NOUS SUR LES RÉSEAUX</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitez notre page Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/museemarmottanmonet_/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Contactez-nous via WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <h3>INSCRIVEZ VOUS</h3>
+            <form>
+                <label for="mail">Mail :</label>
+                <input type="email" id="mail" name="mail" class="form-input" placeholder="Entrez votre email">
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Entrez votre prénom">
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" class="form-input" placeholder="Entrez votre nom">
+
+                <button type="submit" class="submit-button">S'inscrire</button>
+            </form>
         </div>
     </div>
-</div>
 
-           <h3>INSCRIVEZ VOUS</h3>
-           <div class="footer">
-    <form>
-        <label for="mail">Mail :</label>
-        <input type="email" id="mail" name="mail" class="form-input" placeholder="Entrez votre email">
-
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Entrez votre prénom">
-
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" class="form-input" placeholder="Entrez votre nom">
-
-        <button type="submit" class="submit-button">S'inscrire</button>
-    </form>
-</div>
-
-
-    </div>
+    <footer class="main-footer">
+        <p>CRÉDITS | ACCESSIBILITÉ | COOKIES | MENTIONS LÉGALES | DONNÉES PERSONNELLES</p>
+    </footer>
 
 </body>
 </html>
-
-<footer style="background-color: #000; color: #fff; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
-    <p style="margin: 0; font-family: 'Koulen', sans-serif; font-size: 16px;">
-        CRÉDITS | ACCESSIBILITÉ | COOKIES | MENTIONS LÉGALES | DONNÉES PERSONNELLES
-    </p>
-</footer>
