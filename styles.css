@@ -198,6 +198,55 @@ body {
     height: auto; /* Conserve les proportions */
     margin: 0 auto; /* Centre l'image */
     object-fit: cover;
+
+    /* Image falaise.webp */
+img[src*="falaise.webp"] {
+    width: 425px;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Image ballerines.webp */
+img[src*="ballerines.webp"] {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Image coquelicot.webp */
+img[src*="coquelicot.webp"] {
+    width: 273px;
+    height: 55px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Image cerise.webp */
+img[src*="cerise.webp"] {
+    width: 563px;
+    height: 1002px;
+    object-fit: cover;
+}
+
+/* Image gallerie.webp */
+img[src*="gallerie.webp"] {
+    width: 1792px;
+    height: 1024px;
+    object-fit: cover;
+}
+
+/* Image barque.webp */
+img[src*="barque.webp"] {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Image pont-medium.webp */
+img[src*="pont-medium.webp"] {
+    width: 768px;
+    height: 480px;
+    object-fit: cover;
 }
 
 /* Titre sur l'image */
@@ -230,8 +279,9 @@ body {
 .tableau-image {
     width: 100%;
     max-width: 300px;
-    border: 2px solid #000;
     aspect-ratio: 3 / 2; /* Ratio adapté à la taille des images */
+    height: auto;
+    border: 2px solid #000;
     object-fit: cover;
 }
 
@@ -493,7 +543,15 @@ body {
     .tableau-image {
         max-width: 90%; /* Réduit la largeur maximale pour s'adapter aux smartphones */
         margin: 0 auto;
+       
+        img {
+    /* Règle générale pour les images */
+    display: block; /* Supprime les espaces blancs sous les images */
+    max-width: 100%; /* Empêche le dépassement */
+    height: auto; /* Maintient les proportions */
+}
     }
+    
 
     .image-container img {
         max-width: 100%; /* L'image occupe toute la largeur de l'écran */
