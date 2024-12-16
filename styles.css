@@ -80,7 +80,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 5px #E4EA97;
     
     /* Solution pour le décalage CLS */
-    background-color: #f0f0f0; /* Fond neutre temporaire */
+    background-color: transparent; /* Fond neutre temporaire */
     min-height: 450px; /* Réserve l'espace pour éviter les décalages */
     display: flex;
     justify-content: center;
