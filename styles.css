@@ -231,7 +231,8 @@ body {
 }
 
 .tableau-description {
-    font-family: 'Kotta On
+    font-family: 'Kotta On';
+}
 /* Section des Tableaux */
 .tableaux {
     display: flex;
