@@ -52,6 +52,7 @@
 <body>
   <!-- Bande de coquelicots -->
 <div class="coquelicot-banner">
+    <img src="images/coquelicot.webp" alt="Bande fine de coquelicots" />
     <img src="images/coquelicot.webp" 
          alt="Bande fine de coquelicots"
          width="273" 
@@ -127,6 +128,7 @@
                 <div class="title-container">
                     <h2>COLLECTION SAKURA <span class="arrow">→</span></h2>
                 </div>
+                <img src="images/cerise.webp" width="563" height="1002" alt="Collection Sakura" style="max-width: 100%; height: auto;">
                 <img src="images/cerise.webp" 
                     width="563" 
                     height="1002" 
@@ -139,6 +141,7 @@
                     <h2>COLLECTION GABSY <span class="arrow">→</span></h2>
                     
                 </div>
+                <img src="images/bal.webp" alt="Collection Gadsby" width="735" height="1041" loading="lazy" style="max-width: 100%; height: auto;">
                 <img src="images/bal.webp" 
                      alt="Collection Gadsby" 
                      width="735" 
@@ -162,20 +165,24 @@
 <body>
     <!-- Bande avec Image et Titre -->
     <div class="collection-header">
+        <img src="images/pont-small.webp"
         <img src="images/pont-medium.webp"
             srcset="images/pont-small.webp 400w, 
             images/pont-medium.webp 768w, 
-            images/pont-large.webp 1280w,
-            images/pont.webp 1920w"
+            images/pont-large.webp 1280w, 
+            images/pont.webp 1920w" 
+            images/pont-medium.webp 768w,  
     sizes="(max-width: 600px) 400px, 
-           (max-width: 1200px) 768px,
-            100vw"
-    width="1920"
-    height="1200"
+           (max-width: 1200px) 768px, 
+           1280px" 
+    width="1280"
+    height="800"
+    width="768"
+    height="480"
     alt="Pont Claude Monet" 
     class="header-image"
     style="max-width: 100%; height: auto;">
-        
+
         <div class="header-title">
             <h1>COUP D’OEIL SUR LA COLLECTION</h1>
         </div>
@@ -190,10 +197,11 @@
                  width="300"
                  height="200"
                  style="max-width: 100%; height: auto;">
-            
+
             <p class="tableau-description">Les dames du bateau, Claude Monet 1887</p>
         </div>
         <div class="tableau">
+            <img src="images/falaise.webp" alt="La promenade sur la falaise à Pourville, Claude Monet 1882" class="tableau-image">
             <img src="images/falaise.webp" 
                 alt="La promenade sur la falaise à Pourville, Claude Monet 1882" 
                 width="425" 
@@ -208,7 +216,7 @@
    <div style="background-color: #c9aaaa;">
     <!-- Bande blanche en haut -->
     <div style="width: 100%; height: 49px; background-color: white;"></div>
-    
+
     <!-- Section image avec titre -->
     <div style="position: relative;">
         
@@ -217,7 +225,7 @@
             width="1792" 
             height="1024" 
             style="max-width: 100%; max-height: auto; object-fit: cover;">
-        
+
         <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%);">
             <span style="font-family: Koulen; font-size: 96px; font-weight: 900; color: black;">GALERIE</span>
         </div>
@@ -395,13 +403,13 @@
     <form>
         <label for="mail">Mail :</label>
         <input type="email" id="mail" name="mail" class="form-input" placeholder="Entrez votre email">
-        
+
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Entrez votre prénom">
-        
+
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" class="form-input" placeholder="Entrez votre nom">
-        
+
         <button type="submit" class="submit-button">S'inscrire</button>
     </form>
 </div>
