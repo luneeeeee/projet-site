@@ -170,7 +170,7 @@ body {
     color: #000;
 }
 
-.collection-item img {
+.collection-item img, .tableau-image {
     width: 300px;
     height: auto;
     object-fit: cover;
