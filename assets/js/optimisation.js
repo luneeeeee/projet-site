@@ -1,52 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Optimisations des performances en cours...");
+    console.log("Optimisations JS en cours...");
 
-    // **1. Préchargement des images critiques pour améliorer le LCP**
+    // **1. Préchargement dynamique des images critiques**
     const criticalImages = [
-        "assets/images/femmeparapluie-2-large.webp", // Image LCP principale
+        "assets/images/femmeparapluie-2-large.webp", // Image principale LCP
+        "assets/images/pont.webp" // Exemple d'autres images critiques
     ];
 
-    criticalImages.forEach(src => {
-        const link = document.createElement("link");
-        link.rel = "preload";
-        link.href = src;
-        link.as = "image";
-        document.head.appendChild(link);
+    criticalImages.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+        console.log(`Préchargement de l'image critique : ${src}`);
     });
 
-    // **2. Charger les scripts non essentiels après le rendu initial**
+    // **2. Chargement différé des scripts non critiques**
     const deferScripts = [
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" // Exemple de script externe
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
     ];
 
-    deferScripts.forEach(src => {
+    deferScripts.forEach((src) => {
         const script = document.createElement("script");
         script.src = src;
         script.defer = true;
         document.body.appendChild(script);
+        console.log(`Script différé ajouté : ${src}`);
     });
 
-    // **3. Optimiser le Lazy Loading des images sans toucher le HTML**
-    const lazyImages = document.querySelectorAll("img");
-    lazyImages.forEach(img => {
-        if (!img.hasAttribute("loading")) {
-            img.setAttribute("loading", "lazy");
-        }
+    // **3. Réduction de la charge JS en différant les calculs complexes**
+    setTimeout(() => {
+        console.log("Démarrage des opérations différées après le rendu initial...");
+        
+        // Exemple d'optimisation additionnelle (traitement différé des images)
+        document.querySelectorAll("img").forEach(img => {
+            if (!img.complete) {
+                img.loading = "lazy"; // Ajout lazy loading si non chargé
+            }
+        });
+        
+    }, 3000); // Attente de 3 secondes après le chargement principal
+
+    // **4. Préparation au rendu rapide du contenu visible**
+    requestAnimationFrame(() => {
+        console.log("Priorisation du rendu pour les contenus visibles...");
+        document.querySelectorAll("img").forEach(img => {
+            img.style.visibility = "visible";
+        });
     });
 
-    // **4. Éliminer les CSS non critiques dynamiquement (si nécessaire)**
-    const nonCriticalCSS = [
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    ];
-
-    nonCriticalCSS.forEach(href => {
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = href;
-        link.media = "print";
-        link.onload = () => link.media = "all";
-        document.head.appendChild(link);
-    });
-
-    console.log("Optimisations appliquées avec succès !");
+    console.log("Toutes les optimisations JS sont terminées !");
 });
