@@ -83,6 +83,7 @@ nav ul li a:hover {
     color: black;
     font-weight: bold;
     text-shadow: 2px 2px 5px #E4EA97;
+    z-index: 10;
     
     /* Solution pour le décalage CLS */
     background-color: transparent; /* Fond transparent */
